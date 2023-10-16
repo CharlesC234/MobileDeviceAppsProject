@@ -28,12 +28,12 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/signUpButton"
+            android:id="@+id/registerButton"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:layout_margin="16dp"
-            android:text="Sign up"/>
+            android:text="Register"/>
 
 
 

@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
 
         //  sign up button listener
         signUpBtn = (Button) findViewById(R.id.signUpButton);
-        loginBtn.setOnClickListener(new View.OnClickListener() {
+        signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
@@ -44,4 +44,8 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed(){
+        onBackPressed();
+    }
 }
