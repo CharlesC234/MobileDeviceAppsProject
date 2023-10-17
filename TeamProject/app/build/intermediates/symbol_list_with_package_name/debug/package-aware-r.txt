@@ -2168,6 +2168,8 @@ id visible
 id visible_removing_fragment_view_tag
 id withText
 id withinBounds
+id workoutButton
+id workoutTView
 id wrap
 id wrap_content
 id zero_corner_chip
@@ -2242,6 +2244,7 @@ layout activity_chat_screen
 layout activity_login
 layout activity_main
 layout activity_main_screen
+layout activity_saved_workouts
 layout activity_sign_up
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2370,6 +2373,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

@@ -2167,6 +2167,8 @@ int id visible 0x7f0801a5
 int id visible_removing_fragment_view_tag 0x7f0801a6
 int id withText 0x7f0801a7
 int id withinBounds 0x7f0801a8
+int id workoutButton 0x7f0801b3
+int id workoutTView 0x7f0801b4
 int id wrap 0x7f0801a9
 int id wrap_content 0x7f0801aa
 int id zero_corner_chip 0x7f0801ab
@@ -2241,6 +2243,7 @@ int layout activity_chat_screen 0x7f0b0074
 int layout activity_login 0x7f0b001c
 int layout activity_main 0x7f0b001d
 int layout activity_main_screen 0x7f0b001e
+int layout activity_saved_workouts 0x7f0b0075
 int layout activity_sign_up 0x7f0b001f
 int layout custom_dialog 0x7f0b0020
 int layout design_bottom_navigation_item 0x7f0b0021
@@ -2369,6 +2372,7 @@ int string error_icon_content_description 0x7f0e0024
 int string exposed_dropdown_menu_content_description 0x7f0e0025
 int string fab_transformation_scrim_behavior 0x7f0e0026
 int string fab_transformation_sheet_behavior 0x7f0e0027
+int string hello_blank_fragment 0x7f0e0069
 int string hide_bottom_view_on_scroll_behavior 0x7f0e0028
 int string icon_content_description 0x7f0e0029
 int string item_view_role_description 0x7f0e002a

@@ -11,7 +11,7 @@
 9-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:5:5-33:19
+11-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:5:5-36:19
 12        android:allowBackup="true"
 12-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -30,45 +30,51 @@
 20-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:11:9-49
 21        <activity
 21-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:12:9-14:40
-22            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.ChatScreen"
-22-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:13:13-39
+22            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.SavedWorkouts"
+22-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:13:13-42
 23            android:exported="false" />
 23-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:14:13-37
 24        <activity
 24-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:15:9-17:40
-25            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.MainScreen"
+25            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.ChatScreen"
 25-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:16:13-39
 26            android:exported="false" />
 26-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:17:13-37
 27        <activity
 27-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:18:9-20:40
-28            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.SignUpActivity"
-28-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:19:13-43
+28            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.MainScreen"
+28-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:19:13-39
 29            android:exported="false" />
 29-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:20:13-37
 30        <activity
 30-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:21:9-23:40
-31            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.MainActivity"
-31-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:22:13-41
+31            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.SignUpActivity"
+31-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:22:13-43
 32            android:exported="false" />
 32-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:23:13-37
 33        <activity
-33-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:24:9-32:20
-34            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.LoginActivity"
-34-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:25:13-42
-35            android:exported="true" >
-35-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:26:13-36
-36            <intent-filter>
-36-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:27:13-31:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:28:17-69
-37-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:28:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:30:17-77
-39-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:30:27-74
-40            </intent-filter>
-41        </activity>
-42    </application>
-43
-44</manifest>
+33-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:24:9-26:40
+34            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.MainActivity"
+34-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:25:13-41
+35            android:exported="false" />
+35-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:26:13-37
+36        <activity
+36-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:27:9-35:20
+37            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.LoginActivity"
+37-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:28:13-42
+38            android:exported="true" >
+38-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:29:13-36
+39            <intent-filter>
+39-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:30:13-34:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:31:17-69
+40-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:31:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:33:17-77
+42-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:33:27-74
+43            </intent-filter>
+44        </activity>
+45    </application>
+46
+47</manifest>

@@ -4,16 +4,20 @@
         "source": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
-        "source": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_activity_main_screen.xml.flat",
         "source": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/activity_main_screen.xml"
     },
     {
+        "merged": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/activity_main.xml"
+    },
+    {
         "merged": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_activity_saved_workouts.xml.flat",
+        "source": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/activity_saved_workouts.xml"
     },
     {
         "merged": "/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
