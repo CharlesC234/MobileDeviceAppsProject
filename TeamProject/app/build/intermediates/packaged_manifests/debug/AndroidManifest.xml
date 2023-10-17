@@ -19,6 +19,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.TeamProject" >
         <activity
+            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.ProfileScreen"
+            android:exported="false" />
+        <activity
             android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.SavedWorkouts"
             android:exported="false" />
         <activity
