@@ -1743,6 +1743,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id CourseInput
 id FUNCTION
 id META
 id NO_DEBUG
@@ -1895,6 +1896,8 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id example1
+id example2
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2067,6 +2070,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id send
 id shortcut
 id showCustom
 id showHome
