@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".ProfileScreen">
 
     <LinearLayout
@@ -18,15 +19,25 @@
             android:layout_weight="1" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/nameTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_margin="4dp"
             android:gravity="center"
-            android:text="Welcome, NAME" />
+            android:text="current user name" />
+        <TextView
+            android:id="@+id/emailTexView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:text="current user email info" />
 
         <ProgressBar
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyle"
+            android:background="#4A148C"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
@@ -35,6 +46,8 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="#4A148C"
             android:onClick="toSavedWorkouts"
             android:text="Past Workouts" />
     </LinearLayout>

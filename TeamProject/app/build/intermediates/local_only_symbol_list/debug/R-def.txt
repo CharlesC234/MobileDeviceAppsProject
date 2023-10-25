@@ -12,16 +12,15 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id CourseInput
 id button
+id emailTexView
 id example1
 id example2
 id imageButton
-id loginButton
-id passwordEditText
+id nameTextView
 id profileImg
 id progressBar
-id registerButton
 id send
-id signUpButton
+id signInButton
 id textView
 id textView10
 id textView11
@@ -34,7 +33,6 @@ id textView17
 id textView18
 id textView19
 id textView2
-id textView20
 id textView21
 id textView22
 id textView3
@@ -46,7 +44,8 @@ id textView8
 id textView9
 id toWorkouts
 id tochatbtn
-id userNameEditText
+id uploadEmail
+id uploadName
 id workoutButton
 id workoutTView
 id workoutToHomeButton
@@ -56,7 +55,6 @@ layout activity_main
 layout activity_main_screen
 layout activity_profile_screen
 layout activity_saved_workouts
-layout activity_sign_up
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
