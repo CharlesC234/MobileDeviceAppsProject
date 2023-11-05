@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 public class MainScreen extends AppCompatActivity {
     Button chatBtn, profileBtn, workoutBtn;
+    private int goalCalories = 217;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,7 @@ public class MainScreen extends AppCompatActivity {
     public void goToProfile(View myView)
     {
         Intent intent = new Intent(MainScreen.this, ProfileScreen.class);
+        //intent.putExtra("goalCalories",goalCalories);
         startActivity(intent);
 
         Toast toast = Toast.makeText(getApplicationContext(), "Proceeding to Profile Screen", Toast.LENGTH_SHORT);
