@@ -58,6 +58,7 @@ public class ProfileScreen extends AppCompatActivity {
             @SuppressLint("Range") String email = cursor.getString(cursor.getColumnIndex("email"));
 
 
+
             // Update the name Textview
             nameTextView.setText("Welcome Back, "+ name +"!");
 

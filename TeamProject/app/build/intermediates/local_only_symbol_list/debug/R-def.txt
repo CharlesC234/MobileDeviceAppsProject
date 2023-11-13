@@ -13,6 +13,8 @@ drawable circular_shape
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable popup_bg_window
+drawable rounded_edittext
+drawable sign_in_button
 drawable streak_active
 id Caloriestxt
 id CourseInput

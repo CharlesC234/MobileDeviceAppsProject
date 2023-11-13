@@ -7,12 +7,16 @@ public class ProfileModelClass {
     // declare variables
     private String name, gender, email;
     private Bitmap image;
+    private static int currentCalorie;
+    private static int calorieGoal;
 
     // constructor
-    public ProfileModelClass(String name, String email, Bitmap image) {
+    public ProfileModelClass(String name, String email, int currentCalorie, int calorieGoal, Bitmap image) {
         this.name = name;
         this.email = email;
         this.image = image;
+        this.currentCalorie = currentCalorie;
+        this.calorieGoal = calorieGoal;
     }
 
     // Getters and Setters
@@ -32,6 +36,22 @@ public class ProfileModelClass {
         this.email = email;
     }
 
+    public static int getCurrentCalorie(){
+        return currentCalorie;
+    }
+
+    public void setCurrentCalorie(int currentCalorie){
+        this.currentCalorie = currentCalorie;
+    }
+
+    public static int getCalorieGoal(){
+        return currentCalorie;
+    }
+
+    public void setCalorieGoal(int calorieGoal){
+        this.calorieGoal = calorieGoal;
+    }
+
     public Bitmap getImage() {
         return image;
     }
@@ -39,4 +59,5 @@ public class ProfileModelClass {
     public void setImage(Bitmap image) {
         this.image = image;
     }
+
 }

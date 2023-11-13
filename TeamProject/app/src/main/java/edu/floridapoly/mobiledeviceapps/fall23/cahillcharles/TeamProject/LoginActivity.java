@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
     // Function to store user info in data
     private void storeInfo(){
         if(!uploadName.getText().toString().isEmpty() && !uploadEmail.getText().toString().isEmpty()){
-            databaseHelper.storeData(new ProfileModelClass(uploadName.getText().toString(),uploadEmail.getText().toString(),null));
+            databaseHelper.storeData(new ProfileModelClass(uploadName.getText().toString(),uploadEmail.getText().toString(),0,0,null));
             Intent intent = new Intent(LoginActivity.this, MainScreen.class);
             startActivity(intent);
 

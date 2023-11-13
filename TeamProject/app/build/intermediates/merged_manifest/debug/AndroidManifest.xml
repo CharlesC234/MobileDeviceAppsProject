@@ -31,9 +31,6 @@
             android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.MainScreen"
             android:exported="false" />
         <activity
-            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.SignUpActivity"
-            android:exported="false" />
-        <activity
             android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.MainActivity"
             android:exported="false" />
         <activity
