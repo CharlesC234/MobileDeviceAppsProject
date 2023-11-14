@@ -18,15 +18,13 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_profile_background
 drawable ic_profile_foreground
-drawable ic_workout_background
-drawable ic_workout_foreground
 drawable popup_bg_window
 drawable rounded_edittext
 drawable sign_in_button
 drawable streak_active
 id Caloriestxt
-id CourseInput
 id Friday_text
+id Input
 id bottomNavigationView
 id calorieGoalInput
 id chat
@@ -49,6 +47,7 @@ id send
 id signInButton
 id submitCalorieUpdate
 id sunday_text
+id textOutput
 id textView
 id textView10
 id textView11
@@ -78,6 +77,7 @@ id toWorkouts
 id tochatbtn
 id tuesday_progressLayout
 id tuesday_text
+id txtJSONParsed
 id uploadEmail
 id uploadName
 id wednesday_text
@@ -92,14 +92,8 @@ layout activity_profile_screen
 layout activity_saved_workouts
 layout update_calorie_dialogbox
 menu bottom_nav_menu
-mipmap ic_chat
-mipmap ic_chat_round
-mipmap ic_home
-mipmap ic_home_round
 mipmap ic_launcher
 mipmap ic_launcher_round
-mipmap ic_profile
-mipmap ic_profile_round
 mipmap ic_workout
 mipmap ic_workout_round
 string app_name
