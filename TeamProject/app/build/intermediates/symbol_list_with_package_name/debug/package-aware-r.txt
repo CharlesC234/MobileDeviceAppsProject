@@ -1700,7 +1700,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_chat_background
+drawable ic_chat_foreground
 drawable ic_clock_black_24dp
+drawable ic_home_background
+drawable ic_home_foreground
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1708,6 +1712,10 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_profile_background
+drawable ic_profile_foreground
+drawable ic_workout_background
+drawable ic_workout_foreground
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1838,6 +1846,7 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
+id bottomNavigationView
 id bounce
 id buttonPanel
 id cache_measures
@@ -1848,6 +1857,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id chat
 id checkbox
 id checked
 id chip
@@ -2050,6 +2060,7 @@ id percent
 id pin
 id position
 id postLayout
+id profile
 id profileImg
 id progressBar
 id progress_circular
@@ -2385,8 +2396,17 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout update_calorie_dialogbox
+menu bottom_nav_menu
+mipmap ic_chat
+mipmap ic_chat_round
+mipmap ic_home
+mipmap ic_home_round
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap ic_profile
+mipmap ic_profile_round
+mipmap ic_workout
+mipmap ic_workout_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

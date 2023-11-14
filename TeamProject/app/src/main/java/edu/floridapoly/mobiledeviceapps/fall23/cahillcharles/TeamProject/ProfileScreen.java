@@ -1,13 +1,11 @@
 package edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.text.Layout;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -16,7 +14,16 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ProfileScreen extends AppCompatActivity {
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
+
+public class ProfileScreen extends AppCompatActivity implements
+        NavigationView.OnNavigationItemSelectedListener{
+
+    private BottomNavigationView bottomNavigationView;
 
     // declare variables
     private TextView nameTextView;
@@ -36,6 +43,8 @@ public class ProfileScreen extends AppCompatActivity {
         setContentView(R.layout.activity_profile_screen);
         ImageView imgView = findViewById(R.id.profileImg);
         imgView.setImageResource(R.drawable.avatar);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        setupBottomNavigation();
         //testing streak activity
         mondayStreak = findViewById(R.id.monday_progressLayout);
         mondayStreak.setBackgroundResource(R.drawable.streak_active);
@@ -102,5 +111,38 @@ public class ProfileScreen extends AppCompatActivity {
         dialog.setContentView(R.layout.update_calorie_dialogbox);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.popup_bg_window);
         dialog.show();
+    }
+
+    private void setupBottomNavigation() {
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.profile:
+                        startActivity(new Intent(ProfileScreen.this, ProfileScreen.class));
+                        showToast("Proceeding to Profile Screen");
+                        return true;
+                    case R.id.home:
+                        startActivity(new Intent(ProfileScreen.this, MainScreen.class));
+                        showToast("Proceeding to Home Screen");
+                        return true;
+                    case R.id.chat:
+                        startActivity(new Intent(ProfileScreen.this, ChatScreen.class));
+                        showToast("Proceeding to Chat Screen");
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
+    }
+
+    private void showToast(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return false;
     }
 }

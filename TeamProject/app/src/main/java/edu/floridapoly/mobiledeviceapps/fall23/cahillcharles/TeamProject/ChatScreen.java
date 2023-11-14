@@ -1,21 +1,31 @@
 package edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class ChatScreen extends AppCompatActivity {
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
+
+public class ChatScreen extends AppCompatActivity implements
+        NavigationView.OnNavigationItemSelectedListener{
 
     // Declare button variables
+    private BottomNavigationView bottomNavigationView;
     Button example1btn, example2btn, sendbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_screen);
+
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        setupBottomNavigation();
 
         // login button listener
         example1btn = (Button) findViewById(R.id.example1);
@@ -45,5 +55,36 @@ public class ChatScreen extends AppCompatActivity {
                 toast.show();
             }
         });
+    }
+    private void setupBottomNavigation() {
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.profile:
+                        startActivity(new Intent(ChatScreen.this, ProfileScreen.class));
+                        showToast("Proceeding to Profile Screen");
+                        return true;
+                    case R.id.home:
+                        startActivity(new Intent(ChatScreen.this, MainScreen.class));
+                        showToast("Proceeding to Home Screen");
+                        return true;
+                    case R.id.chat:
+                        startActivity(new Intent(ChatScreen.this, ChatScreen.class));
+                        showToast("Proceeding to Chat Screen");
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
+    }
+    private void showToast(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return false;
     }
 }
