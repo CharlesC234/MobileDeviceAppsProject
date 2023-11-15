@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +21,7 @@ public class SavedWorkouts extends AppCompatActivity implements
 
     TextView tView;
     private BottomNavigationView bottomNavigationView;
+    private ListView workout_view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +34,19 @@ public class SavedWorkouts extends AppCompatActivity implements
         //declare button for displaying saved workouts
         Button button = (Button) findViewById(R.id.workoutButton);
 
-        //declare button for going home
-        Button workoutToHomeBtn = (Button) findViewById(R.id.workoutToHomeButton);
+        workout_view = findViewById(R.id.workout_list_view);
+        AdapterView.OnItemClickListener itemClickListener =
+                new AdapterView.OnItemClickListener(){
+                    @Override
+                    public void onItemClick(AdapterView<?> listView,
+                                            View itemView,
+                                            int position,
+                                            long id) {
+                        Toast.makeText(SavedWorkouts.this, "Item No: " + position, Toast.LENGTH_SHORT).show();
+                    }
+                };
+        workout_view.setOnItemClickListener(itemClickListener);
 
-        tView = findViewById(R.id.workoutTView);
         tView.setVisibility(View.INVISIBLE);
     }
 
@@ -54,15 +66,6 @@ public class SavedWorkouts extends AppCompatActivity implements
             Toast.makeText(this, "Displays whatever workout was saved", Toast.LENGTH_SHORT).show();
             tView.setVisibility(View.VISIBLE);
         }
-    }
-
-    //Button to navigate to home screen
-    //will be replaced by navigation bar when we get to that step
-    public void workoutToHome(View view) {
-        Intent intent = new Intent(SavedWorkouts.this, MainScreen.class);
-        Toast.makeText(this, "There's no place like home", Toast.LENGTH_SHORT).show();
-
-        startActivity(intent);
     }
 
     private void setupBottomNavigation() {
