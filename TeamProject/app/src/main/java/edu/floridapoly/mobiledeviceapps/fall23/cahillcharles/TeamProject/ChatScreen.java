@@ -48,6 +48,10 @@ public class ChatScreen extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_screen);
 
+        // find navigation bar using Resource ID
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        setupBottomNavigation();
+
         final Button btnGetServerData = (Button) findViewById(R.id.send);
         EditText editText = findViewById(R.id.Input);
         String initialPrompt = "How are you today?";

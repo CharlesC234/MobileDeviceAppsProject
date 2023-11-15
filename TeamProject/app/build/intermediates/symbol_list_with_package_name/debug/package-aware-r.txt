@@ -2397,8 +2397,14 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout update_calorie_dialogbox
 menu bottom_nav_menu
+mipmap ic_chat
+mipmap ic_chat_round
+mipmap ic_home
+mipmap ic_home_round
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap ic_profile
+mipmap ic_profile_round
 mipmap ic_workout
 mipmap ic_workout_round
 plurals mtrl_badge_content_description
