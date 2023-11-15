@@ -28,6 +28,10 @@
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_workout.webp"
     },
     {
+        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_circular_profile.xml.flat",
+        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\circular_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_home.xml.flat",
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_home.xml"
     },
@@ -50,6 +54,10 @@
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_home_round.webp.flat",
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_home_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_workout_bg.xml.flat",
+        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\workout_bg.xml"
     },
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_profile_foreground.xml.flat",
@@ -216,6 +224,10 @@
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\activity_main_screen.xml"
     },
     {
+        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\font_julius_sansone.ttf.flat",
+        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\font\\julius_sansone.ttf"
+    },
+    {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_home.webp.flat",
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_home.webp"
     },
@@ -226,6 +238,10 @@
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_profile.webp.flat",
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_profile.webp"
+    },
+    {
+        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_counter_bg.xml.flat",
+        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\counter_bg.xml"
     },
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_profile.webp.flat",
@@ -278,6 +294,10 @@
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_workout_round.webp.flat",
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_workout_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_chat_bubble_main.xml.flat",
+        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\chat_bubble_main.xml"
     },
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_chat.xml.flat",
