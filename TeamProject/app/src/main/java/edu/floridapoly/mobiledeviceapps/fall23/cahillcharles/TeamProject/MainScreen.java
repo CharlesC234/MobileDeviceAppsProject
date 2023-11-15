@@ -23,9 +23,9 @@ public class MainScreen extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
 
-        chatBtn = (Button) findViewById(R.id.tochatbtn);
+        //chatBtn = (Button) findViewById(R.id.tochatbtn);
 
-        workoutBtn = (Button) findViewById(R.id.toWorkouts);
+        //workoutBtn = (Button) findViewById(R.id.toWorkouts);
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         setupBottomNavigation();

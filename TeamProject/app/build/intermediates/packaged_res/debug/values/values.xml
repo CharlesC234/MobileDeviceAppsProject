@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="http://schemas.android.com/tools">
+<resources>
     <string-array name="workout_list">
         <item>workout 1</item>
         <item>workout 2</item>
@@ -34,7 +34,7 @@
         <item name="colorSecondaryVariant">@color/pale_grey</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="fontFamily">@font/julius_sansone</item>
         <item name="fontWeight">400</item>
