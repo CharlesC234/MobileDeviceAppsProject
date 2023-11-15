@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\missz\.gradle\caches\transforms-3\46711a511d3e1cd7acb3e23e0cab2c15\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\missz\.gradle\caches\transforms-3\f25edce33867b32a9dc5187e497ed820\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\missz\.gradle\caches\transforms-3\11531f88d50b3880a11e126eade5214f\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
@@ -40,25 +40,29 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\missz\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\missz\.gradle\caches\transforms-3\9f24011717b021bac9ee09874fd0df37\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\missz\.gradle\caches\transforms-3\6abfac59d263b6c8870828beb848f440\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\missz\.gradle\caches\transforms-3\8ec95ebb35a061ba52b2d01835a170aa\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:3:5-80
 		INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:5:5-39:19
+ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:5:5-36:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\missz\.gradle\caches\transforms-3\46711a511d3e1cd7acb3e23e0cab2c15\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\missz\.gradle\caches\transforms-3\46711a511d3e1cd7acb3e23e0cab2c15\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\missz\.gradle\caches\transforms-3\f25edce33867b32a9dc5187e497ed820\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -107,34 +111,28 @@ ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProj
 		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
 		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:22:13-39
-activity#edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.SignUpActivity
+activity#edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.MainActivity
 ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
 		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:25:13-43
-activity#edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.MainActivity
-ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:27:9-29:40
-	android:exported
-		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:29:13-37
-	android:name
-		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:28:13-41
+		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:25:13-41
 activity#edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.LoginActivity
-ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:30:9-38:20
+ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:27:9-35:20
 	android:exported
-		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:32:13-36
+		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:29:13-36
 	android:name
-		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:31:13-42
+		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:28:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:33:13-37:29
+ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:34:17-69
+ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:34:25-66
+		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:36:17-77
+ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:36:27-74
+		ADDED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:33:27-74
 uses-sdk
 INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml

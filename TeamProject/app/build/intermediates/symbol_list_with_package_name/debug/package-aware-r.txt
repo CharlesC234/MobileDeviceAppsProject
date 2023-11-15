@@ -57,6 +57,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array workout_list
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1707,7 +1708,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_chat_background
+drawable ic_chat_foreground
 drawable ic_clock_black_24dp
+drawable ic_home_background
+drawable ic_home_foreground
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1715,6 +1720,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_profile_background
+drawable ic_profile_foreground
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1749,6 +1756,8 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable popup_bg_window
+drawable rounded_edittext
+drawable sign_in_button
 drawable streak_active
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -1760,9 +1769,9 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id Caloriestxt
-id CourseInput
 id FUNCTION
 id Friday_text
+id Input
 id META
 id NO_DEBUG
 id SHIFT
@@ -1845,6 +1854,7 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
+id bottomNavigationView
 id bounce
 id buttonPanel
 id cache_measures
@@ -1855,6 +1865,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id chat
 id checkbox
 id checked
 id chip
@@ -2058,6 +2069,7 @@ id percent
 id pin
 id position
 id postLayout
+id profile
 id profileImg
 id progressBar
 id progress_circular
@@ -2155,6 +2167,7 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
+id textOutput
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -2208,6 +2221,7 @@ id transition_transform
 id triangle
 id tuesday_progressLayout
 id tuesday_text
+id txtJSONParsed
 id unchecked
 id uniform
 id unlabeled
@@ -2224,9 +2238,7 @@ id visible_removing_fragment_view_tag
 id wednesday_text
 id withText
 id withinBounds
-id workoutButton
-id workoutTView
-id workoutToHomeButton
+id workout_list_view
 id wrap
 id wrap_content
 id zero_corner_chip
@@ -2388,8 +2400,17 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout update_calorie_dialogbox
+menu bottom_nav_menu
+mipmap ic_chat
+mipmap ic_chat_round
+mipmap ic_home
+mipmap ic_home_round
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap ic_profile
+mipmap ic_profile_round
+mipmap ic_workout
+mipmap ic_workout_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

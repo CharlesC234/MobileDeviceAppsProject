@@ -22,6 +22,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static String createTable = "create table ProfileUser(name TEXT" +
             ",email TEXT" +
+            ",currentCalorie INTEGER" +
+            ",calorieGoal INTEGER" +
             ",image BLOB)";
 
     public DatabaseHelper(@Nullable Context context) {
@@ -43,16 +45,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase database = this.getWritableDatabase();
         Bitmap bitmapImage = profileModelClass.getImage();
 
-        /*
-        byteArrayOutputStream = new ByteArrayOutputStream();
-        bitmapImage.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
-        byteImage = byteArrayOutputStream.toByteArray();
-         */
 
         ContentValues contentValues = new ContentValues();
         contentValues.put("name", profileModelClass.getName());
         contentValues.put("email", profileModelClass.getEmail());
+        contentValues.put("currentCalorie", profileModelClass.getCurrentCalorie());
+        contentValues.put("calorieGoal", profileModelClass.getCalorieGoal());
         //contentValues.put("image", byteImage);
+
 
         long checkQuery = database.insert("ProfileUser", null, contentValues);
 

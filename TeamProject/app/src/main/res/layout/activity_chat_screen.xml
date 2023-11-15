@@ -3,10 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#000000"
     android:orientation="vertical"
     android:gravity="bottom"
     tools:context=".MainActivity">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Parsed Response : "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtJSONParsed"
+        android:textColor="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Server Response (JSON): "
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textOutput"
+        android:layout_width="fill_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Output : Click on button to get server data." />
     <Button
         android:id="@+id/example1"
         android:layout_width="fill_parent"
@@ -36,8 +63,9 @@
     android:orientation="horizontal"
     tools:context=".MainActivity">
     <EditText
-        android:id="@+id/CourseInput"
+        android:id="@+id/Input"
         android:layout_width="300dp"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:hint="Enter a chat"
         android:textSize="18dp"
@@ -49,4 +77,15 @@
         android:text="Send"
         android:textStyle="bold" />
 </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:background="#6699CC"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
 </LinearLayout>

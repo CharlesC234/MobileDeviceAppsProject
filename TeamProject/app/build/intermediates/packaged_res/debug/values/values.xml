@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="workout_list">
+        <item>workout 1</item>
+        <item>workout 2</item>
+        <item>workout 3</item>
+        <item>workout 4</item>
+        <item>workout 5</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="dark_black">#2D2D2D</color>
     <color name="dark_purple">#3E236E</color>
