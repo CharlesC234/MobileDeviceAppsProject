@@ -20,8 +20,16 @@
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\update_calorie_dialogbox.xml"
     },
     {
+        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_circular_profile.xml.flat",
+        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\circular_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main_screen.xml.flat",
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\activity_main_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\font_julius_sansone.ttf.flat",
+        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\font\\julius_sansone.ttf"
     },
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -34,6 +42,14 @@
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_saved_workouts.xml.flat",
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\activity_saved_workouts.xml"
+    },
+    {
+        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_counter_bg.xml.flat",
+        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\counter_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_workout_bg.xml.flat",
+        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\workout_bg.xml"
     },
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_streak_active.xml.flat",
@@ -66,6 +82,10 @@
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_circular_shape.xml.flat",
         "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\circular_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_chat_bubble_main.xml.flat",
+        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\chat_bubble_main.xml"
     },
     {
         "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",

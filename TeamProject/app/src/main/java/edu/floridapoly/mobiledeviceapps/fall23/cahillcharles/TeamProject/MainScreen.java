@@ -9,16 +9,12 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainScreen extends AppCompatActivity {
-    Button chatBtn, profileBtn, workoutBtn;
+    Button profileBtn;
     private int goalCalories = 217;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
-
-        chatBtn = (Button) findViewById(R.id.tochatbtn);
-
-        workoutBtn = (Button) findViewById(R.id.toWorkouts);
     }
     public void goToChat(View myView)
     {
