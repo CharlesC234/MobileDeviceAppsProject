@@ -147,6 +147,8 @@ attr behavior_peekHeight
 attr behavior_saveFlags
 attr behavior_skipCollapsed
 attr borderWidth
+attr border_color
+attr border_width
 attr borderlessButtonStyle
 attr bottomAppBarStyle
 attr bottomNavigationStyle
@@ -1680,6 +1682,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable avatar
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1690,12 +1693,18 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circular_progress_bar
+drawable circular_shape
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_chat_background
+drawable ic_chat_foreground
 drawable ic_clock_black_24dp
+drawable ic_home_background
+drawable ic_home_foreground
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1703,6 +1712,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_profile_background
+drawable ic_profile_foreground
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1736,6 +1747,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable popup_bg_window
+drawable rounded_edittext
+drawable sign_in_button
+drawable streak_active
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1743,7 +1758,10 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Caloriestxt
 id FUNCTION
+id Friday_text
+id Input
 id META
 id NO_DEBUG
 id SHIFT
@@ -1826,15 +1844,18 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
+id bottomNavigationView
 id bounce
 id buttonPanel
 id cache_measures
+id calorieGoalInput
 id cancel_button
 id center
 id center_horizontal
 id center_vertical
 id chain
 id chains
+id chat
 id checkbox
 id checked
 id chip
@@ -1857,6 +1878,7 @@ id contiguous
 id coordinator
 id cos
 id counterclockwise
+id currentCalAmtInput
 id custom
 id customPanel
 id cut
@@ -1895,6 +1917,8 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id example1
+id example2
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1929,6 +1953,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageButton
 id info
 id invisible
 id inward
@@ -1945,7 +1970,6 @@ id line3
 id linear
 id listMode
 id list_item
-id loginButton
 id masked
 id material_clock_display
 id material_clock_face
@@ -1969,6 +1993,8 @@ id material_value_index
 id message
 id middle
 id mini
+id monday_progressLayout
+id monday_text
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2000,6 +2026,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nameTextView
 id navigation_bar_item_icon_view
 id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
@@ -2022,8 +2049,8 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
-id passwordEditText
 id password_toggle
+id pastWorkoutsbtn
 id path
 id pathRelative
 id peekHeight
@@ -2031,12 +2058,16 @@ id percent
 id pin
 id position
 id postLayout
+id profile
+id profileImg
+id progressBar
 id progress_circular
 id progress_horizontal
+id progress_layout
+id progress_text
 id radio
 id ratio
 id rectangles
-id registerButton
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2044,6 +2075,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id saturday_text
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2067,11 +2099,12 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id send
 id shortcut
 id showCustom
 id showHome
 id showTitle
-id signUpButton
+id signInButton
 id sin
 id skipCollapsed
 id slide
@@ -2099,7 +2132,9 @@ id staticPostLayout
 id stop
 id stretch
 id submenuarrow
+id submitCalorieUpdate
 id submit_area
+id sunday_text
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -2121,10 +2156,35 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
+id textOutput
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView10
+id textView11
+id textView12
+id textView13
+id textView14
+id textView15
+id textView16
+id textView17
+id textView18
+id textView19
+id textView2
+id textView20
+id textView21
+id textView22
+id textView23
+id textView25
+id textView3
+id textView4
+id textView5
+id textView6
+id textView7
+id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2134,10 +2194,13 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id thursday_text
 id time
 id title
 id titleDividerNoCustom
 id title_template
+id toWorkouts
+id tochatbtn
 id toggle
 id top
 id topPanel
@@ -2150,20 +2213,28 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tuesday_progressLayout
+id tuesday_text
+id txtJSONParsed
 id unchecked
 id uniform
 id unlabeled
 id up
+id uploadEmail
+id uploadName
 id useLogo
-id userNameEditText
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id wednesday_text
 id withText
 id withinBounds
+id workoutButton
+id workoutTView
+id workoutToHomeButton
 id wrap
 id wrap_content
 id zero_corner_chip
@@ -2238,7 +2309,8 @@ layout activity_chat_screen
 layout activity_login
 layout activity_main
 layout activity_main_screen
-layout activity_sign_up
+layout activity_profile_screen
+layout activity_saved_workouts
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2323,8 +2395,18 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout update_calorie_dialogbox
+menu bottom_nav_menu
+mipmap ic_chat
+mipmap ic_chat_round
+mipmap ic_home
+mipmap ic_home_round
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap ic_profile
+mipmap ic_profile_round
+mipmap ic_workout
+mipmap ic_workout_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -2366,6 +2448,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -2662,6 +2745,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style DialogStyle
 style EmptyTheme
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
@@ -3180,6 +3264,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView border_color border_width
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize
