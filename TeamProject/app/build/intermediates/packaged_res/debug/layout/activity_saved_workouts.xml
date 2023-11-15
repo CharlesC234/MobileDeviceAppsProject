@@ -13,29 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.8"
+        android:weightSum="1"
         android:orientation="vertical">
-        <Button
-            android:id="@+id/workoutButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Saved Workout"
-            android:onClick="displayWorkout"/>
 
-        <TextView
-            android:id="@+id/workoutTView"
+        <ListView
+            android:id="@+id/workout_list_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""/>
+            android:layout_weight="0.8"
+            android:entries="@array/workout_list"/>
+
+
     </LinearLayout>
 
-    <!-- Button to go home, set to the bottom of the screen with weights -->
-    <Button
-        android:id="@+id/workoutToHomeButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:text="Home"
-        android:onClick="workoutToHome"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

@@ -31,8 +31,6 @@ public class SavedWorkouts extends AppCompatActivity implements
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         setupBottomNavigation();
 
-        //declare button for displaying saved workouts
-        Button button = (Button) findViewById(R.id.workoutButton);
 
         workout_view = findViewById(R.id.workout_list_view);
         AdapterView.OnItemClickListener itemClickListener =
@@ -47,26 +45,8 @@ public class SavedWorkouts extends AppCompatActivity implements
                 };
         workout_view.setOnItemClickListener(itemClickListener);
 
-        tView.setVisibility(View.INVISIBLE);
     }
 
-    //Function that sets the textview below the button to this text. Will be replace by fragments and generalized when we get to that step
-    public void displayWorkout(View view) {
-
-        //if displaying workout and button is clicked, hide workout
-        //else display workout
-        if(tView.getVisibility() == View.VISIBLE)
-        {
-            tView.setVisibility(View.INVISIBLE);
-            Toast.makeText(this, "hides workout", Toast.LENGTH_SHORT).show();
-        }
-        else
-        {
-            tView.setText("I dunno some workout\nLift big weight\nDo something");
-            Toast.makeText(this, "Displays whatever workout was saved", Toast.LENGTH_SHORT).show();
-            tView.setVisibility(View.VISIBLE);
-        }
-    }
 
     private void setupBottomNavigation() {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

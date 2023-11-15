@@ -57,6 +57,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array workout_list
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -2232,9 +2233,7 @@ id visible_removing_fragment_view_tag
 id wednesday_text
 id withText
 id withinBounds
-id workoutButton
-id workoutTView
-id workoutToHomeButton
+id workout_list_view
 id wrap
 id wrap_content
 id zero_corner_chip
