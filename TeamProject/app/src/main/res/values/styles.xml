@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="defaultText" parent="TextAppearance.AppCompat">
+            <item name="android:textColor">#FFFFFFFF</item>
+            <item name="android:fontFamily">@font/julius_sansone</item>
+    </style>
+</resources>
