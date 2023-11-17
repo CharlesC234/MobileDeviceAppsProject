@@ -9,4 +9,24 @@
         <item>workout 4</item>
         <item>workout 5</item>
     </string-array>
+
+
+    <!-- values for the gender array-->
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>Prefer Not to Answer</item>
+    </string-array>
+
+    <!-- keys for the shared preferences -->
+    <string name="height_key">Height</string>
+    <string name="wight_key">Weight</string>
+    <string name="name_key">Name</string>
+    <string name="calorie_key">Calorie</string>
+    <string name="spinner_key">Gender</string>
+    <string name="radio_cut_key">Cut</string>
+    <string name="radio_gain_key">Gain</string>
+    <string name="radio_maintain_key">Maintain</string>
+
 </resources>

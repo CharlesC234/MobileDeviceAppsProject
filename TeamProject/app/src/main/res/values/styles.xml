@@ -4,4 +4,5 @@
             <item name="android:textColor">#FFFFFFFF</item>
             <item name="android:fontFamily">@font/julius_sansone</item>
     </style>
+
 </resources>

@@ -13,23 +13,104 @@
     <EditText
         android:id="@+id/uploadName"
         android:layout_width="270dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:padding="4dp"
         android:layout_margin="4dp"
-        android:textColor="#FFFFFF"
-        android:hint="name"
+        android:textColorHint="#FFFFFF"
+        android:hint="Name"
         android:background="@drawable/rounded_edittext"/>
 
+    <EditText
+        android:id="@+id/uploadHeight"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:textColorHint="#FFFFFF"
+        android:hint="Height"
+        android:background="@drawable/rounded_edittext"/>
+
+    <EditText
+        android:id="@+id/uploadWeight"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:textColorHint="#FFFFFF"
+        android:hint="Weight"
+        android:background="@drawable/rounded_edittext"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            tools:ignore="ExtraText">
+
+            <RadioButton
+                android:id="@+id/radio_cut"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_radio"
+                android:text="Cut" />
+
+            <RadioButton
+                android:id="@+id/radio_gain"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_radio"
+                android:textColor="#FFFFFF"
+                android:text="Gain"/>
+
+            <RadioButton
+                android:id="@+id/radio_maintain"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_radio"
+                android:text="Maintain" />
+        </RadioGroup>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/uploadGender"
+            android:layout_width="126dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:gravity="left|center"
+            android:text="Gender: "
+            android:textSize="20sp"
+
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="155dp"
+            android:layout_height="52dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
 
 
     <EditText
-        android:id="@+id/uploadEmail"
+        android:id="@+id/uploadCalorie"
         android:layout_width="270dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:padding="4dp"
         android:layout_margin="4dp"
-        android:textColor="#FFFFFF"
-        android:hint="email address"
+        android:textColorHint="#FFFFFF"
+        android:hint="Calorie Goal"
         android:background="@drawable/rounded_edittext"/>
 
     <LinearLayout
@@ -38,18 +119,13 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/signInButton"
+            android:id="@+id/nextButton"
             android:layout_width="122dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:padding="16dp"
             android:textColor="#FFFFFF"
-            android:text="Sign in"
+            android:text="Next"
             android:background="@drawable/sign_in_button"/>
-
-
     </LinearLayout>
-
-
-
 </LinearLayout>

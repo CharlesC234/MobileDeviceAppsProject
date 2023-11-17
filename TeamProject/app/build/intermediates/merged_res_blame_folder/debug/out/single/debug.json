@@ -1,354 +1,358 @@
 [
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_profile_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xhdpi/ic_profile_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_home.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xhdpi/ic_home.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_circular_progress_bar.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\circular_progress_bar.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_chat.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xhdpi/ic_chat.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_workout.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_workout.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_profile_screen.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\activity_profile_screen.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_chat.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_chat.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_profile_background.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\ic_profile_background.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_workout.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_workout.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_workout.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_workout.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_chat_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-mdpi/ic_chat_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_circular_profile.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\circular_profile.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_profile_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-hdpi/ic_profile_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_home.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_home.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_profile_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_profile_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_profile.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_profile.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_profile.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_profile.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_profile.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxxhdpi/ic_profile.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_workout.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xhdpi/ic_workout.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_home_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_home_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_chat_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-hdpi/ic_chat_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_workout_bg.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\workout_bg.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_chat_round.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_chat_round.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_profile_foreground.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\ic_profile_foreground.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_profile_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxxhdpi/ic_profile_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_home_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_home_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_home_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_home_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_home_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-mdpi/ic_home_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_chat_background.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\ic_chat_background.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_workout.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_workout.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_avatar.jpg.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\avatar.jpg"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_chat.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_chat.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_workout_round.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_workout_round.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_profile_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_profile_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/font_julius_sansone.ttf.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/font/julius_sansone.ttf"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_activity_main_screen.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/activity_main_screen.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_workout.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_workout.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_ic_chat_background.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/ic_chat_background.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_circular_shape.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\circular_shape.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_ic_chat_foreground.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/ic_chat_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_workout_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_workout_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_workout_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-mdpi/ic_workout_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_chat_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_chat_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_chat_bubble_main.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/chat_bubble_main.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_chat_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_chat_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_ic_profile_background.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/ic_profile_background.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_chat_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_chat_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_home.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-hdpi/ic_home.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_home.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_home.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_circular_shape.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/circular_shape.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_profile_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-mdpi/ic_profile_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_workout.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_workout.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_circular_progress_bar.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/circular_progress_bar.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_workout_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_workout_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_workout_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-hdpi/ic_workout_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_rounded_edittext.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\rounded_edittext.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_activity_chat_screen.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/activity_chat_screen.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_workout.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_workout.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_rounded_radio.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/rounded_radio.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_home_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_home_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_profile.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xhdpi/ic_profile.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_home_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-hdpi/ic_home_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_workout_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_workout_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_chat.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-hdpi/ic_chat.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_popup_bg_window.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\popup_bg_window.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_ic_home_background.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/ic_home_background.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_profile_round.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_profile_round.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_home.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home_foreground.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\ic_home_foreground.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_chat.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_chat.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_workout.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_workout.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_workout_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxxhdpi/ic_workout_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_chat_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_chat_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_profile.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-mdpi/ic_profile.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_home.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_home.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_home_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_home_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_chat_round.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_chat_round.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_chat_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxxhdpi/ic_chat_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home_background.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\ic_home_background.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_rounded_edittext.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/rounded_edittext.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_workout_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_workout_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_profile_round.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_profile_round.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_profile.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_profile.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_streak_active.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/streak_active.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_sign_in_button.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\sign_in_button.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_profile_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_profile_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/menu_bottom_nav_menu.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_chat_foreground.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\ic_chat_foreground.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_counter_bg.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/counter_bg.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\layout_update_calorie_dialogbox.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\update_calorie_dialogbox.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_update_calorie_dialogbox.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/update_calorie_dialogbox.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_home.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_home.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_workout.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxxhdpi/ic_workout.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main_screen.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\activity_main_screen.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\font_julius_sansone.ttf.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\font\\julius_sansone.ttf"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_sign_in_button.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/sign_in_button.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_home.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_home.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_profile_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_profile_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_saved_workouts.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\activity_saved_workouts.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_home_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xhdpi/ic_home_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_profile.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_profile.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_workout_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xhdpi/ic_workout_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_counter_bg.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\counter_bg.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_home.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_home.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_profile.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_profile.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_profile_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_profile_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_workout.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-hdpi/ic_workout.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_chat.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_chat.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_profile.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_profile.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_streak_active.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\streak_active.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_home.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-mdpi/ic_home.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_home.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_home.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_activity_saved_workouts.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/activity_saved_workouts.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_home_round.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_home_round.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_chat.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxxhdpi/ic_chat.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_workout_round.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_workout_round.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_chat_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xhdpi/ic_chat_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_ic_profile_foreground.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/ic_profile_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_chat_screen.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\activity_chat_screen.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_circular_profile.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/circular_profile.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_profile_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_profile_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_activity_profile_screen.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/activity_profile_screen.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_workout_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_workout_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_home_round.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-anydpi-v26/ic_home_round.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\drawable_chat_bubble_main.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\drawable\\chat_bubble_main.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_ic_home_foreground.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/ic_home_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_chat.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_chat.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_home_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_home_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_chat_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_chat_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_chat.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-mdpi\\ic_chat.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_workout_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxhdpi/ic_workout_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_chat_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_chat_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_profile.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-hdpi/ic_profile.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_avatar.jpg.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/avatar.jpg"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_chat.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_chat.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_chat.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-mdpi/ic_chat.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_home_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxxhdpi/ic_home_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_profile.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_profile.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_home.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xxxhdpi/ic_home.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_chat.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-xhdpi\\ic_chat.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_workout_bg.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/workout_bg.xml"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_workout.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-mdpi/ic_workout.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_profile.webp.flat",
-        "source": "C:\\Users\\missz\\AndroidStudioProjects\\MobileDeviceAppsProject\\TeamProject\\app\\src\\main\\res\\mipmap-hdpi\\ic_profile.webp"
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_popup_bg_window.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/popup_bg_window.xml"
+    },
+    {
+        "merged": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/drawable/ic_launcher_background.xml"
     }
 ]

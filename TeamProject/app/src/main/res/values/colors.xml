@@ -12,4 +12,6 @@
     <color name="light_purple">#BB9CF2</color>
     <color name="dark_black">#2D2D2D</color>
     <color name="pale_grey">#3F3F3F</color>
+    <color name="your_color">#4A148C</color>
+    <color name="text_color">#FFFFFFFF</color>
 </resources>
