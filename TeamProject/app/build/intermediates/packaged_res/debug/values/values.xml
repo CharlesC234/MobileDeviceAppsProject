@@ -30,12 +30,13 @@
     <string name="calorie_key">Calorie</string>
     <string name="height_key">Height</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="name_key">Nane</string>
+    <string name="name_key">Name</string>
     <string name="radio_cut_key">Cut</string>
     <string name="radio_gain_key">Gain</string>
+    <string name="radio_group">radioGroup</string>
     <string name="radio_maintain_key">Maintain</string>
     <string name="spinner_key">Gender</string>
-    <string name="wight_key">Weight</string>
+    <string name="weight_key">Weight</string>
     <style name="DialogStyle" parent="Theme.AppCompat.Dialog">
         <item name="android:windowMinWidthMajor">80%</item>
         <item name="android:windowMinWidthMinor">80%</item>

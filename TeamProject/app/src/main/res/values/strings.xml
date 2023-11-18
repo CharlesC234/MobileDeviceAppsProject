@@ -19,13 +19,15 @@
         <item>Prefer Not to Answer</item>
     </string-array>
 
-    <!-- keys for the shared preferences -->
+    <!-- keys for the shared preferences
+     height, weight, and calorie have default value of 0 -->
     <string name="height_key">Height</string>
-    <string name="wight_key">Weight</string>
+    <string name="weight_key">Weight</string>
     <string name="name_key">Name</string>
     <string name="calorie_key">Calorie</string>
     <string name="spinner_key">Gender</string>
     <string name="radio_cut_key">Cut</string>
+    <string name="radio_group">radioGroup</string>
     <string name="radio_gain_key">Gain</string>
     <string name="radio_maintain_key">Maintain</string>
 

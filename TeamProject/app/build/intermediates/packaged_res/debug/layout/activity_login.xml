@@ -16,6 +16,7 @@
         android:layout_height="48dp"
         android:padding="4dp"
         android:layout_margin="4dp"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:hint="Name"
         android:background="@drawable/rounded_edittext"/>
@@ -25,6 +26,7 @@
         android:layout_width="270dp"
         android:layout_height="48dp"
         android:padding="4dp"
+        android:textColor="#FFFFFF"
         android:layout_margin="4dp"
         android:textColorHint="#FFFFFF"
         android:hint="Height"
@@ -36,6 +38,7 @@
         android:layout_height="48dp"
         android:padding="4dp"
         android:layout_margin="4dp"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:hint="Weight"
         android:background="@drawable/rounded_edittext"/>
@@ -45,6 +48,7 @@
         android:layout_height="wrap_content">
 
         <RadioGroup
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -109,6 +113,7 @@
         android:layout_height="48dp"
         android:padding="4dp"
         android:layout_margin="4dp"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:hint="Calorie Goal"
         android:background="@drawable/rounded_edittext"/>

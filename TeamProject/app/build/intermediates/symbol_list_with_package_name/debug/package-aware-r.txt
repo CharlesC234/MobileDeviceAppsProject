@@ -2085,6 +2085,7 @@ id progress_text
 id radio
 id radio_cut
 id radio_gain
+id radio_group
 id radio_maintain
 id ratio
 id rectangles
@@ -2532,11 +2533,12 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string radio_cut_key
 string radio_gain_key
+string radio_group
 string radio_maintain_key
 string search_menu_title
 string spinner_key
 string status_bar_notification_info_overflow
-string wight_key
+string weight_key
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

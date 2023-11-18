@@ -2084,6 +2084,7 @@ int id progress_text 0x7f0a0137
 int id radio 0x7f0a0138
 int id radio_cut 0x7f0a0139
 int id radio_gain 0x7f0a013a
+int id radio_group 0x7f0a01e7
 int id radio_maintain 0x7f0a013b
 int id ratio 0x7f0a013c
 int id rectangles 0x7f0a013d
@@ -2531,11 +2532,12 @@ int string path_password_eye_mask_visible 0x7f110066
 int string path_password_strike_through 0x7f110067
 int string radio_cut_key 0x7f11006d
 int string radio_gain_key 0x7f11006e
+int string radio_group 0x7f110073
 int string radio_maintain_key 0x7f11006f
 int string search_menu_title 0x7f110068
 int string spinner_key 0x7f110070
 int string status_bar_notification_info_overflow 0x7f110069
-int string wight_key 0x7f110071
+int string weight_key 0x7f110072
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style AndroidThemeColorAccentYellow 0x7f120002

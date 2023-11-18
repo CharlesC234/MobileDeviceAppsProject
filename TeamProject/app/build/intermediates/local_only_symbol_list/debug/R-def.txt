@@ -61,6 +61,7 @@ id progress_layout
 id progress_text
 id radio_cut
 id radio_gain
+id radio_group
 id radio_maintain
 id saturday_text
 id send
@@ -124,9 +125,10 @@ string hello_blank_fragment
 string name_key
 string radio_cut_key
 string radio_gain_key
+string radio_group
 string radio_maintain_key
 string spinner_key
-string wight_key
+string weight_key
 style DialogStyle
 style Theme.TeamProject
 style defaultText

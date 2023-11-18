@@ -6593,7 +6593,7 @@
         <item>Female</item>
         <item>Other</item>
         <item>Prefer Not to Answer</item>
-    </string-array><string name="height_key">Height</string><string name="radio_cut_key">Cut</string><string name="calorie_key">Calorie</string><string name="radio_maintain_key">Maintain</string><string name="name_key">Nane</string><string name="spinner_key">Gender</string><string name="radio_gain_key">Gain</string><string name="wight_key">Weight</string></file><file path="/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/values/styles.xml" qualifiers=""><style name="defaultText" parent="TextAppearance.AppCompat">
+    </string-array><string name="height_key">Height</string><string name="radio_cut_key">Cut</string><string name="calorie_key">Calorie</string><string name="radio_maintain_key">Maintain</string><string name="name_key">Name</string><string name="spinner_key">Gender</string><string name="radio_gain_key">Gain</string><string name="weight_key">Weight</string><string name="radio_group">radioGroup</string></file><file path="/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/values/styles.xml" qualifiers=""><style name="defaultText" parent="TextAppearance.AppCompat">
             <item name="android:textColor">#FFFFFFFF</item>
             <item name="android:fontFamily">@font/julius_sansone</item>
     </style></file><file path="/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/res/values/themes.xml" qualifiers=""><style name="Theme.TeamProject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
