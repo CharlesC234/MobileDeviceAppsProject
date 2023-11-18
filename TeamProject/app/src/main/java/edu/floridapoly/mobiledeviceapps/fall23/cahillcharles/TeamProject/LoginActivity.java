@@ -143,8 +143,12 @@ public class LoginActivity extends AppCompatActivity implements AdapterView.OnIt
             return;
         }
 
-        // Try-catch block to prevent user from leaving fields empty
         try {
+            // Clear existing values in SharedPreferences
+            SharedPreferences.Editor clearEditor = sharedPreferences.edit();
+            clearEditor.clear();
+            clearEditor.apply();
+
             // Save user input to SharedPreferences
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString(getString(R.string.name_key), name);
@@ -172,6 +176,7 @@ public class LoginActivity extends AppCompatActivity implements AdapterView.OnIt
             Toast.makeText(this, "Invalid input for height, weight, or calorie", Toast.LENGTH_SHORT).show();
         }
     }
+
 
 
     // AdapterView to handle Spinner
