@@ -19,7 +19,7 @@ public class DatabaseHelperWorkout extends SQLiteOpenHelper {
     private ByteArrayOutputStream byteArrayOutputStream;
     private byte[] byteImage;
 
-    private static String createTable = "create table workouts(name TEXT" + ",description TEXT)";
+    private static String createTable = "create table workouts(name TEXT)";
 
 
     public DatabaseHelperWorkout(@Nullable Context context) {
@@ -48,7 +48,7 @@ public class DatabaseHelperWorkout extends SQLiteOpenHelper {
 
         ContentValues contentValues = new ContentValues();
         contentValues.put("name", wMC.getName());
-        contentValues.put("description", wMC.getDescription());
+        //contentValues.put("description", wMC.getDescription());
         //contentValues.put("image", byteImage);
 
         long checkQuery = database.insert("workouts", null, contentValues);

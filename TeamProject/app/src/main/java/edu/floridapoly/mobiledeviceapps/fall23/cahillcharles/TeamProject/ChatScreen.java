@@ -1,6 +1,8 @@
 package edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,12 +35,14 @@ public class ChatScreen extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener{
 
     String responseText;
-    String parsedText;
+    String parsedText = "";
     StringBuffer response;
     URL url;
     String apiKey = "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";
     String model = "gpt-3.5-turbo";
     String urlStr = "https://api.openai.com/v1/chat/completions";
+    Boolean workoutMealFlag = false;
+    int mealPrefKeyNum = 0;
 
     // Declare button variables
     private BottomNavigationView bottomNavigationView;
@@ -48,6 +52,7 @@ public class ChatScreen extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_screen);
 
+
         // find navigation bar using Resource ID
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         setupBottomNavigation();
@@ -56,6 +61,109 @@ public class ChatScreen extends AppCompatActivity implements
         EditText editText = findViewById(R.id.Input);
         String initialPrompt = "How are you today?";
         editText.setText(initialPrompt);
+
+        Button btnGenerateMeals = findViewById(R.id.example1);
+        Button btnGenerateWorkouts = findViewById(R.id.example2);
+        TextView textViewOutput = findViewById(R.id.textOutput);
+
+        SharedPreferences shGenerateWorkoutMeal = getSharedPreferences("MyAppPreferences", MODE_APPEND);
+        String strName = shGenerateWorkoutMeal.getString("Name", "");
+        int height = shGenerateWorkoutMeal.getInt("Height",0);
+        int weight = shGenerateWorkoutMeal.getInt("Weight",0);
+        int calorie = shGenerateWorkoutMeal.getInt("Calorie", 0);
+        int calorieDecision = shGenerateWorkoutMeal.getInt("radioGroup",0);
+        String strGender = shGenerateWorkoutMeal.getString("Gender", "");
+
+
+
+
+
+        btnGenerateWorkouts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+                workoutMealFlag = true;
+               String prompt = "Provide workouts based off inputs:" +
+                       "Weight: " + weight +
+                       "Height: " + height +
+                       "Gender: " + strGender +
+                       "Calorie Goal: " + calorie +
+                       "Give only name of the workout and none of the user information. " +
+                       "No dates, no amount that needs to be done, no days, no descriptions, no types. " +
+                       "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores.";
+
+               /*
+               Provide workouts based off inputs:
+                       Weight: 160
+                       Height: 6ft
+                       Gender: Male
+                       Calorie Goal: 2000
+                Put in JSON format. Give only name of the workout in the JSON file and none of the user information.
+                No dates, no amount that needs to be done, no days, no descriptions, no types
+                */
+
+
+
+                //String prompt = "say something";
+
+                new GetServerData().execute(prompt);
+               //textViewOutput.setText(parsedText);
+
+
+            }
+        });
+
+        btnGenerateMeals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                workoutMealFlag = false;
+
+
+
+                String strCalorieDecision = "";
+
+                switch (calorieDecision)
+                {
+                    case 2131362107:
+                       strCalorieDecision = "cut";
+                        break;
+                    case 2131362108:
+                        strCalorieDecision = "gain";
+                        break;
+                    case 2131362109:
+                        strCalorieDecision = "maintain";
+                        break;
+                    default:
+                        strCalorieDecision = "cut";
+                        break;
+
+                }
+
+                String prompt = "Provide meals based off inputs:" +
+                        "Weight: " + weight +
+                        "Height: " + height +
+                        "Gender: " + strGender +
+                        "Calorie Goal: " + calorie +
+                        "Calorie Decision: " + calorieDecision +
+                        "Give only name of the meal and none of the user information. " +
+                        "No dates, no amount that needs to be done, no days, no descriptions, no types. " +
+                        "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores.";
+
+
+
+                //String prompt = "say something";
+
+                new GetServerData().execute(prompt);
+                //textViewOutput.setText(parsedText);
+
+                //String strSecondParseJSON = extractMessageFromJSONResponse(parsedText);
+                //textViewOutput.setText(strSecondParseJSON);
+
+            }
+        });
 
         btnGetServerData.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,10 +195,54 @@ public class ChatScreen extends AppCompatActivity implements
         protected void onPostExecute(Object o) {
             super.onPostExecute(o);
 
-            TextView textResponse = findViewById(R.id.textOutput);
-            textResponse.setText(responseText);
+            //TextView textResponse = findViewById(R.id.textOutput);
+            //textResponse.setText(responseText);
+            String[] strHoldWorkoutMeal = parsedText.split("-");
+
             TextView textParsed = findViewById(R.id.txtJSONParsed);
-            textParsed.setText(parsedText);
+            textParsed.setText("");
+
+            SharedPreferences mealPref = getSharedPreferences("mealPref", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = mealPref.edit();
+
+
+            for (String workoutMealString : strHoldWorkoutMeal) {
+
+                if(!workoutMealString.isEmpty())
+                {
+
+                    textParsed.append(workoutMealString + "\n");
+
+                }
+
+            }
+
+            DatabaseHelperWorkout dbWrkout = new DatabaseHelperWorkout(getApplicationContext());
+
+            for (String workoutMeal : strHoldWorkoutMeal) {
+
+                if(workoutMealFlag)
+                {
+
+                    WorkoutModelClass wkmClass = new WorkoutModelClass(workoutMeal);
+                    dbWrkout.storeData(wkmClass);
+
+
+                }
+                else
+                {
+
+                    editor.putString("meal-" + mealPrefKeyNum, workoutMeal);
+                    mealPrefKeyNum++;
+
+                }
+
+            }
+
+            editor.apply();
+
+
+
         }
     }
 
