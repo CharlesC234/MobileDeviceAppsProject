@@ -30,5 +30,8 @@
     <string name="radio_group">radioGroup</string>
     <string name="radio_gain_key">Gain</string>
     <string name="radio_maintain_key">Maintain</string>
+    <string name="workouts_finished_key">FinWorkouts</string>
+    <string name="current_calorie_key">CurrentCalories</string>
+    <string name="workout_streak">Streak</string>
 
 </resources>

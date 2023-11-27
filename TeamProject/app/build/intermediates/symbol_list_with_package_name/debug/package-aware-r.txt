@@ -1862,6 +1862,7 @@ id bottomNavigationView
 id bounce
 id buttonPanel
 id cache_measures
+id calGoalsTextView
 id calorieGoalInput
 id cancel_button
 id center
@@ -1893,6 +1894,7 @@ id coordinator
 id cos
 id counterclockwise
 id currentCalAmtInput
+id currentCalText
 id custom
 id customPanel
 id cut
@@ -1941,12 +1943,14 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id finishedWorkoutsTextView
 id fitToContents
 id fixed
 id flip
 id floating
 id forever
 id fragment_container_view_tag
+id friday_progressLayout
 id gender_spinner
 id ghost_view
 id ghost_view_holder
@@ -2078,6 +2082,7 @@ id postLayout
 id profile
 id profileImg
 id progressBar
+id progressBarWidget
 id progress_circular
 id progress_horizontal
 id progress_layout
@@ -2096,6 +2101,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id saturday_progressLayout
 id saturday_text
 id save_non_transition_alpha
 id save_overlay_view
@@ -2150,10 +2156,13 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id stop
+id streakTextView
+id streak_count
 id stretch
 id submenuarrow
 id submitCalorieUpdate
 id submit_area
+id sunday_progressLayout
 id sunday_text
 id tabMode
 id tag_accessibility_actions
@@ -2181,7 +2190,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView10
 id textView11
 id textView12
@@ -2189,15 +2197,12 @@ id textView13
 id textView14
 id textView15
 id textView16
-id textView17
 id textView18
 id textView2
 id textView20
 id textView23
 id textView25
-id textView3
 id textView4
-id textView5
 id textView6
 id textView7
 id textView8
@@ -2211,6 +2216,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id thursday_progressLayout
 id thursday_text
 id time
 id title
@@ -2247,6 +2253,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id wednesday_progressLayout
 id wednesday_text
 id withText
 id withinBounds
@@ -2461,6 +2468,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string current_calorie_key
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2539,6 +2547,8 @@ string search_menu_title
 string spinner_key
 string status_bar_notification_info_overflow
 string weight_key
+string workout_streak
+string workouts_finished_key
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

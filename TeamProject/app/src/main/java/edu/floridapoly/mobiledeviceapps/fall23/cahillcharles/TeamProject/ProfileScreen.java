@@ -2,12 +2,17 @@ package edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -20,6 +25,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
+import org.w3c.dom.Text;
+
 public class ProfileScreen extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener{
 
@@ -31,52 +38,38 @@ public class ProfileScreen extends AppCompatActivity implements
     //declare progress bar variables
     private ProgressBar progressBar;
     private TextView progressText;
+    private TextView streakCounter;
     //declaring variables for changing calorie count
     private Button calChangeBtn;
     private LinearLayout mondayStreak;
     //declaring varibles for calorie counters
     private int currentCalories = 50;
     private int goalCalories;
+    private static final String PREFERENCES_NAME = "MyAppPreferences";
+    SharedPreferences prefs;
+    int defaultVal = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        prefs = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
         setContentView(R.layout.activity_profile_screen);
         ImageView imgView = findViewById(R.id.profileImg);
         imgView.setImageResource(R.drawable.avatar);
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         setupBottomNavigation();
-        //testing streak activity
-        mondayStreak = findViewById(R.id.monday_progressLayout);
-        mondayStreak.setBackgroundResource(R.drawable.streak_active);
 
-
-
-        // Initialize your databaseHelper
-        databaseHelper = new DatabaseHelper(this);
-
-        // referencing the name, email TextView
+        //setting up the preferences
+        String name = prefs.getString(getString(R.string.name_key)," ");
+        int calories = prefs.getInt(getString(R.string.current_calorie_key), defaultVal);
+        int calGoal = prefs.getInt(getString(R.string.calorie_key), defaultVal);
+        int streak = prefs.getInt(getString(R.string.workout_streak), defaultVal);
+        //referencing the name, email TextView
         nameTextView = findViewById(R.id.nameTextView);
-
-
-        // get user data from database
-        Cursor cursor = databaseHelper.getUser();
-
-        // Grabbing the first name on the database
-        if(cursor.moveToLast()){
-            @SuppressLint("Range") String name = cursor.getString(cursor.getColumnIndex("name"));
-            @SuppressLint("Range") String email = cursor.getString(cursor.getColumnIndex("email"));
-
-
-
-            // Update the name Textview
-            nameTextView.setText("Welcome Back, "+ name +"!");
-
-            // Update the email Textview
-        }
-        // closing the cursor
-        cursor.close();
-        //update the calories
+        nameTextView.setText(name);
+        updateStreak();
         updateCalorieCounter();
+        //updateCalorieCounter();
     }
     public void toSavedWorkouts(View myView)
     {
@@ -88,28 +81,184 @@ public class ProfileScreen extends AppCompatActivity implements
         toast.show();
 
     }
+    public void updateStreak()
+    {
+        prefs = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
+        int streak = prefs.getInt(getString(R.string.workout_streak), defaultVal);
+        streakCounter = findViewById(R.id.streak_count);
+        streakCounter.setText(Integer.toString(streak));
+    }
     //to update the progress bar to the users current calorie intake
     public void updateCalorieCounter()
     {
-        //goalCalories = getIntent().getExtras().getString("goalCalories");
-       /* progressBar = findViewById(R.id.progressBar);
-        int amt = (currentCalories * 100)/goalCalories;
+        prefs = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
+        int cal = prefs.getInt(getString(R.string.current_calorie_key), defaultVal);
+        int goal = prefs.getInt(getString(R.string.calorie_key), defaultVal);
+        progressBar = findViewById(R.id.progressBar);
+        int amt = (cal * 100)/goal;
         progressBar.setProgress(amt);
         progressText = findViewById(R.id.progress_text);
-        progressText.setText(amt);
-        */
-
+        progressText.setText(Integer.toString(amt) + "%");
+        Toast toast = Toast.makeText(getApplicationContext(), "Updated Counter", Toast.LENGTH_SHORT);
     }
     //onClick method for the change Calories when pressing the number in between the progress bar
     public void changeCalories(View myView) //on click method for updatingCalories Btn
     {
         showDialog();
+
+        Toast toast = Toast.makeText(getApplicationContext(), "Updated Calories", Toast.LENGTH_SHORT);
+    }
+    //onClick method for the daily streaks
+    public void setStreak(View MyView)
+    {
+        int viewId = MyView.getId();
+        LinearLayout itemStreak = null;
+        if (viewId == R.id.monday_progressLayout)
+        {
+            //testing streak activity
+            itemStreak = findViewById(R.id.monday_progressLayout);
+            if(itemStreak.getBackground() == null)
+            {
+                itemStreak.setBackgroundResource(R.drawable.streak_active);
+            }
+            else
+            {
+                itemStreak.setBackground(null);
+            }
+        }
+        else if (viewId == R.id.tuesday_progressLayout)
+        {
+            //testing streak activity
+            itemStreak = findViewById(R.id.tuesday_progressLayout);
+            if(itemStreak.getBackground() == null)
+            {
+                itemStreak.setBackgroundResource(R.drawable.streak_active);
+            }
+            else
+            {
+                itemStreak.setBackground(null);
+            }
+        }
+        else if (viewId == R.id.wednesday_progressLayout)
+        {
+            //testing streak activity
+            itemStreak = findViewById(R.id.wednesday_progressLayout);
+            if(itemStreak.getBackground() == null)
+            {
+                itemStreak.setBackgroundResource(R.drawable.streak_active);
+            }
+            else
+            {
+                itemStreak.setBackground(null);
+            }
+        }
+        else if (viewId == R.id.thursday_progressLayout)
+        {
+            //testing streak activity
+            itemStreak = findViewById(R.id.thursday_progressLayout);
+            if(itemStreak.getBackground() == null)
+            {
+                itemStreak.setBackgroundResource(R.drawable.streak_active);
+            }
+            else
+            {
+                itemStreak.setBackground(null);
+            }
+        }
+        else if (viewId == R.id.friday_progressLayout)
+        {
+            //testing streak activity
+            itemStreak = findViewById(R.id.friday_progressLayout);
+            if(itemStreak.getBackground() == null)
+            {
+                itemStreak.setBackgroundResource(R.drawable.streak_active);
+            }
+            else
+            {
+                itemStreak.setBackground(null);
+            }
+        }
+        else if (viewId == R.id.saturday_progressLayout)
+        {
+            //testing streak activity
+            itemStreak = findViewById(R.id.saturday_progressLayout);
+            if(itemStreak.getBackground() == null)
+            {
+                itemStreak.setBackgroundResource(R.drawable.streak_active);
+            }
+            else
+            {
+                itemStreak.setBackground(null);
+            }
+        }
+        else if (viewId == R.id.sunday_progressLayout)
+        {
+            //testing streak activity
+            itemStreak = findViewById(R.id.sunday_progressLayout);
+            if(itemStreak.getBackground() == null)
+            {
+                itemStreak.setBackgroundResource(R.drawable.streak_active);
+            }
+            else
+            {
+                itemStreak.setBackground(null);
+            }
+        }
+        prefs = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
+        int streak = prefs.getInt(getString(R.string.workout_streak), defaultVal) +1;
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putInt(getString(R.string.workout_streak),streak);
+        editor.apply();
+        updateStreak();
+
     }
     private void showDialog()
     {
         Dialog dialog = new Dialog(this, R.style.DialogStyle);
         dialog.setContentView(R.layout.update_calorie_dialogbox);
         dialog.getWindow().setBackgroundDrawableResource(R.drawable.popup_bg_window);
+        Button update = dialog.findViewById(R.id.submitCalorieUpdate);
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText updateCalEditTxt = dialog.findViewById(R.id.currentCalAmtInput);
+                EditText updateCalGoalsEditText = dialog.findViewById(R.id.calorieGoalInput);
+
+
+                SharedPreferences.Editor editor = prefs.edit();
+                if (TextUtils.isEmpty(updateCalEditTxt.getText().toString()) || TextUtils.isEmpty(updateCalGoalsEditText.getText().toString()))
+                {
+                    if (TextUtils.isEmpty(updateCalEditTxt.getText().toString()) )
+                    {
+                        Log.d("variable update", "cal is empty");
+                        int updateCalGoals = Integer.parseInt(String.valueOf(updateCalGoalsEditText.getText()));
+                        editor.putInt(getString(R.string.calorie_key),updateCalGoals);
+                    }
+                    else if(TextUtils.isEmpty(updateCalGoalsEditText.getText().toString()))
+                    {
+                        Log.d("variable update", "cal goal is empty");
+                        int updateCal = Integer.parseInt(String.valueOf(updateCalEditTxt.getText()));
+                        editor.putInt(getString(R.string.current_calorie_key),updateCal);
+                    }
+                    else
+                    {
+                        Log.d("variable update", "both variables are filled");
+                        int updateCal = Integer.parseInt(String.valueOf(updateCalEditTxt.getText()));
+                        int updateCalGoals = Integer.parseInt(String.valueOf(updateCalGoalsEditText.getText()));
+                        editor.putInt(getString(R.string.calorie_key),updateCalGoals);
+                        editor.putInt(getString(R.string.current_calorie_key),updateCal);
+                    }
+                    editor.apply();
+                    updateCalorieCounter();
+                    dialog.dismiss();
+                }
+                else
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Need to change at least one input", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+            }
+        });
         dialog.show();
     }
 

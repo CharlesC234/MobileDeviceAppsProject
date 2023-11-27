@@ -3,30 +3,94 @@ package edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.Calendar;
+import java.util.Date;
+
 public class MainScreen extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener {
     private BottomNavigationView bottomNavigationView;
     Button chatBtn, profileBtn, workoutBtn;
+    TextView greetingTxt;
+    TextView nmTxt;
+    TextView calGoalTxt, finWorkoutsTxt,streakTxt, currCalTxt;
+    ProgressBar pb;
+
     private int goalCalories = 217;
+    private static final String PREFERENCES_NAME = "MyAppPreferences";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
+        SharedPreferences prefs = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
+        int defaultVal = 0;
+        //set up shared pref variables
+        String name = prefs.getString(getString(R.string.name_key)," ");
+        int calories = prefs.getInt(getString(R.string.current_calorie_key), defaultVal);
+        int calGoal = prefs.getInt(getString(R.string.calorie_key), defaultVal);
+        int finishedWorkouts = prefs.getInt(getString(R.string.workouts_finished_key),defaultVal);
+        int streak = prefs.getInt(getString(R.string.workout_streak), defaultVal);
 
         //chatBtn = (Button) findViewById(R.id.tochatbtn);
 
         //workoutBtn = (Button) findViewById(R.id.toWorkouts);
+        //connecting elements
+        nmTxt = findViewById(R.id.nameText);
+        calGoalTxt = findViewById(R.id.calGoalsTextView);
+        finWorkoutsTxt = findViewById(R.id.finishedWorkoutsTextView);
+        streakTxt = findViewById(R.id.streakTextView);
+        //putting values to UI
 
+        nmTxt.setText(name);
+        calGoalTxt.setText(String.valueOf(calGoal));
+        finWorkoutsTxt.setText(String.valueOf(finishedWorkouts));
+        streakTxt.setText(String.valueOf(streak));
+
+        //setting greeting based off time
+        greetingTxt = findViewById(R.id.greetingText);
+        Date date = new Date();
+        Calendar cal = Calendar.getInstance();
+        int hour = cal.get(Calendar.HOUR_OF_DAY) ;
+
+        if(hour>=12 && hour < 17)
+        {
+            greetingTxt.setText("Good Afternoon");
+        }
+        else if(hour >= 17 && hour < 21)
+        {
+            greetingTxt.setText("Good Evening");
+        }
+        else if(hour >= 21 && hour < 24)
+        {
+            greetingTxt.setText("Good Night");
+        }
+        else
+        {
+            greetingTxt.setText("Good Morning");
+        }
+        //update calorie widget
+        updateCalorieCounter(calories, calGoal);
+
+        //checks for workouts in DB
+
+
+        //putting the nav bar into activity
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         setupBottomNavigation();
     }
@@ -55,7 +119,16 @@ public class MainScreen extends AppCompatActivity implements
             }
         });
     }
+    public void updateCalorieCounter(int current, int goal)
+    {
+        currCalTxt = findViewById(R.id.currentCalText);
+        currCalTxt.setText(String.valueOf(current));
+        pb = findViewById(R.id.progressBarWidget);
+        int amt = (current * 100)/goal;
+        pb.setProgress(amt);
 
+
+    }
     public void goToChat(View myView)
     {
         Intent intent = new Intent(MainScreen.this, ChatScreen.class);
