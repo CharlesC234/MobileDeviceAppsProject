@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -111,7 +112,12 @@ public class LoginActivity extends AppCompatActivity implements AdapterView.OnIt
         int selectedRadioButtonId = sharedPreferences.getInt(getString(R.string.radio_group), -1);
         if (selectedRadioButtonId != -1) {
             RadioButton selectedRadioButton = findViewById(selectedRadioButtonId);
-            selectedRadioButton.setChecked(true);
+            if (selectedRadioButton != null) {
+                selectedRadioButton.setChecked(true);
+            } else {
+                // Log an error or handle the case where the RadioButton is not found
+                Log.d("RadioButtonTag", "RadioButton not found for ID: " + selectedRadioButtonId);
+            }
         }
     }
 
