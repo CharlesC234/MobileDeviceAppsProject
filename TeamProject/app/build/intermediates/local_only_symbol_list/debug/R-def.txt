@@ -17,10 +17,15 @@ color white
 color your_color
 drawable avatar
 drawable chat_bubble_main
+drawable chat_scree_navigation_image
 drawable circular_profile
 drawable circular_progress_bar
 drawable circular_shape
 drawable counter_bg
+drawable delete_workout_img
+drawable dropdown_arrow
+drawable dropdown_arrow_up
+drawable home_screen_navigation_image
 drawable ic_chat_background
 drawable ic_chat_foreground
 drawable ic_home_background
@@ -30,6 +35,7 @@ drawable ic_launcher_foreground
 drawable ic_profile_background
 drawable ic_profile_foreground
 drawable popup_bg_window
+drawable profile_navigation_image
 drawable rounded_edittext
 drawable rounded_radio
 drawable sign_in_button
@@ -42,9 +48,12 @@ id Input
 id bottomNavigationView
 id calGoalsTextView
 id calorieGoalInput
+id cardView
 id chat
 id currentCalAmtInput
 id currentCalText
+id delete_workout_image
+id dropdown_workout_image
 id example1
 id example2
 id finishedWorkoutsTextView
@@ -106,7 +115,10 @@ id uploadName
 id uploadWeight
 id wednesday_progressLayout
 id wednesday_text
-id workout_list_view
+id workout_description
+id workout_description_tview
+id workout_name
+id workouts_recycler_view
 layout activity_chat_screen
 layout activity_login
 layout activity_main
@@ -114,6 +126,7 @@ layout activity_main_screen
 layout activity_profile_screen
 layout activity_saved_workouts
 layout update_calorie_dialogbox
+layout workouts_recyclerview
 menu bottom_nav_menu
 mipmap ic_chat
 mipmap ic_chat_round

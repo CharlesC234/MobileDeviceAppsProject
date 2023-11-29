@@ -224,8 +224,8 @@ public class ChatScreen extends AppCompatActivity implements
                 if(workoutMealFlag)
                 {
 
-                    WorkoutModelClass wkmClass = new WorkoutModelClass(workoutMeal);
-                    dbWrkout.storeData(wkmClass);
+                   // WorkoutModelClass wkmClass = new WorkoutModelClass(workoutMeal);
+                  //  dbWrkout.storeData(wkmClass);
 
 
                 }
