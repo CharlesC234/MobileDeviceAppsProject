@@ -169,6 +169,7 @@
                 android:textSize="20sp" />
 
             <HorizontalScrollView
+                android:id="@+id/scroller"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp">
@@ -188,14 +189,14 @@
                         android:padding="10dp">
 
                         <TextView
-                            android:id="@+id/textView7"
+                            android:id="@+id/title0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Workout Title"
                             android:textColor="#FFFFFFFF" />
 
                         <TextView
-                            android:id="@+id/textView8"
+                            android:id="@+id/des0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="-Various workouts here \n -another \n -another \n -another"
@@ -212,14 +213,14 @@
                         android:padding="10dp">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/title1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="WorkoutTitle"
                             android:textColor="#FFFFFFFF" />
 
                         <TextView
-                            android:id="@+id/textView10"
+                            android:id="@+id/des1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="-Various workouts here \n -another \n -another \n -another"
@@ -236,14 +237,14 @@
                         android:padding="10dp">
 
                         <TextView
-                            android:id="@+id/textView11"
+                            android:id="@+id/title2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="WorkoutTitle"
                             android:textColor="#FFFFFFFF" />
 
                         <TextView
-                            android:id="@+id/textView12"
+                            android:id="@+id/des2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="-Various workouts here \n -another \n -another \n -another"
@@ -259,14 +260,14 @@
                         android:padding="10dp">
 
                         <TextView
-                            android:id="@+id/textView13"
+                            android:id="@+id/title3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="WorkoutTitle"
                             android:textColor="#FFFFFFFF" />
 
                         <TextView
-                            android:id="@+id/textView14"
+                            android:id="@+id/des3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="-Various workouts here \n -another \n -another \n -another"

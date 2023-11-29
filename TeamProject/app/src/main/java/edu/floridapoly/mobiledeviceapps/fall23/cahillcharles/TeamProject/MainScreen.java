@@ -12,13 +12,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.HorizontalScrollView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -30,9 +34,10 @@ public class MainScreen extends AppCompatActivity implements
     TextView nmTxt;
     TextView calGoalTxt, finWorkoutsTxt,streakTxt, currCalTxt;
     ProgressBar pb;
-
+    HorizontalScrollView scroll;
     private int goalCalories = 217;
     private static final String PREFERENCES_NAME = "MyAppPreferences";
+    WorkoutDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,11 +93,44 @@ public class MainScreen extends AppCompatActivity implements
         updateCalorieCounter(calories, calGoal);
 
         //checks for workouts in DB
-
-
+        TextView p1 = findViewById(R.id.title0);
+        TextView p2 = findViewById(R.id.title1);
+        TextView p3 = findViewById(R.id.title2);
+        TextView p4 = findViewById(R.id.title3);
+        ArrayList<TextView> titles = new ArrayList<>();
+        titles.add(p1);
+        titles.add(p2);
+        titles.add(p3);
+        titles.add(p4);
+        p1 = findViewById(R.id.des0);
+        p2 = findViewById(R.id.des1);
+        p3 = findViewById(R.id.des2);
+        p4 = findViewById(R.id.des3);
+        ArrayList<TextView> descriptions = new ArrayList<>();
+        descriptions.add(p1);
+        descriptions.add(p2);
+        descriptions.add(p3);
+        descriptions.add(p4);
+        db = new WorkoutDatabase(this);
+        ArrayList<WorkoutModelClass> workouts = db.getAllWorkouts();
+        scroll = findViewById(R.id.scroller);
+        int i = 0;
+        TextView view;
+        while(i < workouts.size() || i < 4)
+        {
+            WorkoutModelClass workout = workouts.get(i);
+            String desc = workout.getDescription();
+            String workoutName = workout.getName();
+            view = titles.get(i);
+            view.setText(workoutName);
+            view = descriptions.get(i);
+            view.setText(desc);
+            i++;
+        }
         //putting the nav bar into activity
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         setupBottomNavigation();
+
     }
 
     private void setupBottomNavigation() {
