@@ -134,9 +134,13 @@ public class MainScreen extends AppCompatActivity implements
     }
 
     private void setupBottomNavigation() {
+
+        // Set the default selected item to the "Home" button
+        bottomNavigationView.setSelectedItemId(R.id.home);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                // Perform the corresponding action
                 switch (item.getItemId()) {
                     case R.id.profile:
                         startActivity(new Intent(MainScreen.this, ProfileScreen.class));
@@ -150,13 +154,12 @@ public class MainScreen extends AppCompatActivity implements
                         startActivity(new Intent(MainScreen.this, ChatScreen.class));
                         showToast("Proceeding to Chat Screen");
                         return true;
-
-                    default:
-                        return false;
                 }
+                return false; // Return false for items that don't have a corresponding action
             }
         });
     }
+
     public void updateCalorieCounter(int current, int goal)
     {
         currCalTxt = findViewById(R.id.currentCalText);
