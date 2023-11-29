@@ -17,6 +17,7 @@ color white
 color your_color
 drawable avatar
 drawable chat_bubble_main
+drawable chat_scree_navigation_image
 drawable circular_profile
 drawable circular_progress_bar
 drawable circular_shape
@@ -24,6 +25,7 @@ drawable counter_bg
 drawable delete_workout_img
 drawable dropdown_arrow
 drawable dropdown_arrow_up
+drawable home_screen_navigation_image
 drawable ic_chat_background
 drawable ic_chat_foreground
 drawable ic_home_background
@@ -33,6 +35,7 @@ drawable ic_launcher_foreground
 drawable ic_profile_background
 drawable ic_profile_foreground
 drawable popup_bg_window
+drawable profile_navigation_image
 drawable rounded_edittext
 drawable rounded_radio
 drawable sign_in_button
