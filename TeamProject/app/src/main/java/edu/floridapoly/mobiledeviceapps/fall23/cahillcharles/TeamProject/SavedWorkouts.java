@@ -2,12 +2,16 @@ package edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -16,9 +20,11 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
-public class SavedWorkouts extends AppCompatActivity implements
-        NavigationView.OnNavigationItemSelectedListener{
+import java.util.ArrayList;
 
+public class SavedWorkouts extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
+    WorkoutDatabase db;
     TextView tView;
     private BottomNavigationView bottomNavigationView;
     private ListView workout_view;
@@ -31,20 +37,14 @@ public class SavedWorkouts extends AppCompatActivity implements
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         setupBottomNavigation();
 
+        db = new WorkoutDatabase(this); //start database
+        ArrayList<WorkoutModelClass> workouts = db.getAllWorkouts(); //get all workouts from database
 
-        workout_view = findViewById(R.id.workout_list_view);
-        AdapterView.OnItemClickListener itemClickListener =
-                new AdapterView.OnItemClickListener(){
-                    @Override
-                    public void onItemClick(AdapterView<?> listView,
-                                            View itemView,
-                                            int position,
-                                            long id) {
-                        Toast.makeText(SavedWorkouts.this, "Item No: " + position, Toast.LENGTH_SHORT).show();
-                    }
-                };
-        workout_view.setOnItemClickListener(itemClickListener);
-
+        //Finish setting up recycler view and dynamic expandable list
+        RecyclerView recyclerView = findViewById(R.id.workouts_recycler_view);
+        ExpandableAdapter adapter = new ExpandableAdapter(this, workouts);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
 

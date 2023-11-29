@@ -9,22 +9,13 @@
 
     <!-- Layout containing the button to display saved workouts and the text it is
         displayed on-->
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/workouts_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.8"
-        android:weightSum="1"
-        android:orientation="vertical">
+        android:layout_weight="0.8">
 
-        <ListView
-            android:id="@+id/workout_list_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.8"
-            android:entries="@array/workout_list"/>
-
-
-    </LinearLayout>
+    </androidx.recyclerview.widget.RecyclerView>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
