@@ -34,16 +34,7 @@
         android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:text="Output : Click on button to get server data." />
-    <Button
-        android:id="@+id/example1"
-        android:layout_width="fill_parent"
-        android:layout_marginHorizontal="5dp"
-        android:layout_height="wrap_content"
-        android:text="Suggest meals"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:textAlignment="viewStart"
-        android:textStyle="bold" />
+
     <Button
         android:id="@+id/example2"
         android:layout_width="fill_parent"
@@ -81,13 +72,11 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:background="@color/dark_purple"
+        android:background="#6699CC"
         android:layout_height="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"/>
+        app:menu="@menu/bottom_nav_menu"/>
 </LinearLayout>
