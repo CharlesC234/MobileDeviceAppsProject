@@ -86,7 +86,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/smile
 	android:allowBackup
 		ADDED from /home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:11:9-49
+		ADDED from /home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:11:9-59
 activity#edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.ProfileScreen
 ADDED from /home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:12:9-14:40
 	android:exported

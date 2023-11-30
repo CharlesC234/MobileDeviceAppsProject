@@ -54,7 +54,6 @@ id currentCalAmtInput
 id currentCalText
 id delete_workout_image
 id dropdown_workout_image
-id example1
 id example2
 id finishedWorkoutsTextView
 id friday_progressLayout

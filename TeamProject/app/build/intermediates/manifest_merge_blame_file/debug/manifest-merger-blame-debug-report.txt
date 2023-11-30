@@ -30,8 +30,8 @@
 20        android:supportsRtl="true"
 20-->/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:10:9-35
 21        android:testOnly="true"
-22        android:theme="@style/Theme.TeamProject" >
-22-->/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:11:9-49
+22        android:theme="@style/Theme.AppCompat.NoActionBar" >
+22-->/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:11:9-59
 23        <activity
 23-->/home/smiley/AndroidStudioProjects/MobileDeviceAppsProject/TeamProject/app/src/main/AndroidManifest.xml:12:9-14:40
 24            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.ProfileScreen"

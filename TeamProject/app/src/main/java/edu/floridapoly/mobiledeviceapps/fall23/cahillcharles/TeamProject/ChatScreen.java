@@ -28,6 +28,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -62,18 +63,16 @@ public class ChatScreen extends AppCompatActivity implements
         String initialPrompt = "How are you today?";
         editText.setText(initialPrompt);
 
-        Button btnGenerateMeals = findViewById(R.id.example1);
         Button btnGenerateWorkouts = findViewById(R.id.example2);
         TextView textViewOutput = findViewById(R.id.textOutput);
 
-        SharedPreferences shGenerateWorkoutMeal = getSharedPreferences("MyAppPreferences", MODE_APPEND);
+        SharedPreferences shGenerateWorkoutMeal = getSharedPreferences("MyAppPreferences", MODE_PRIVATE);
         String strName = shGenerateWorkoutMeal.getString("Name", "");
         int height = shGenerateWorkoutMeal.getInt("Height",0);
         int weight = shGenerateWorkoutMeal.getInt("Weight",0);
         int calorie = shGenerateWorkoutMeal.getInt("Calorie", 0);
         int calorieDecision = shGenerateWorkoutMeal.getInt("radioGroup",0);
         String strGender = shGenerateWorkoutMeal.getString("Gender", "");
-
 
 
 
@@ -85,14 +84,20 @@ public class ChatScreen extends AppCompatActivity implements
 
 
                 workoutMealFlag = true;
-               String prompt = "Provide workouts based off inputs:" +
-                       "Weight: " + weight +
-                       "Height: " + height +
-                       "Gender: " + strGender +
-                       "Calorie Goal: " + calorie +
-                       "Give only name of the workout and none of the user information. " +
-                       "No dates, no amount that needs to be done, no days, no descriptions, no types. " +
-                       "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores.";
+               String prompt = "Provide workouts with descriptions of the workout based off inputs:" +
+                       "Weight: " + weight+
+                       "Height: " + height+
+                       "Gender: " + strGender+
+                       "Calorie Goal: " + calorie+
+                       "Give only names of the workouts and descriptions of the workouts. No user information. " +
+                       "No dates, no amount that needs to be done, no days, no types. " +
+                       "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores." +
+                       "Use example. Don't reformat example."+
+                        "Example: " +
+                        "CardioInterval: Alternating between sprinting and jogging to elevate heart rate.-" +
+                        "StrengthTraining: Compound exercises like squats, deadlifts, and bench press.-" +
+                        "HIIT: High intensity interval training with bodyweight exercises.-" +
+                        "Yoga: Dynamic yoga flow incorporating strength and flexibility.";
 
                /*
                Provide workouts based off inputs:
@@ -115,55 +120,7 @@ public class ChatScreen extends AppCompatActivity implements
             }
         });
 
-        btnGenerateMeals.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                workoutMealFlag = false;
-
-
-
-                String strCalorieDecision = "";
-
-                switch (calorieDecision)
-                {
-                    case 2131362107:
-                       strCalorieDecision = "cut";
-                        break;
-                    case 2131362108:
-                        strCalorieDecision = "gain";
-                        break;
-                    case 2131362109:
-                        strCalorieDecision = "maintain";
-                        break;
-                    default:
-                        strCalorieDecision = "cut";
-                        break;
-
-                }
-
-                String prompt = "Provide meals based off inputs:" +
-                        "Weight: " + weight +
-                        "Height: " + height +
-                        "Gender: " + strGender +
-                        "Calorie Goal: " + calorie +
-                        "Calorie Decision: " + calorieDecision +
-                        "Give only name of the meal and none of the user information. " +
-                        "No dates, no amount that needs to be done, no days, no descriptions, no types. " +
-                        "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores.";
-
-
-
-                //String prompt = "say something";
-
-                new GetServerData().execute(prompt);
-                //textViewOutput.setText(parsedText);
-
-                //String strSecondParseJSON = extractMessageFromJSONResponse(parsedText);
-                //textViewOutput.setText(strSecondParseJSON);
-
-            }
-        });
 
         btnGetServerData.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -195,18 +152,27 @@ public class ChatScreen extends AppCompatActivity implements
         protected void onPostExecute(Object o) {
             super.onPostExecute(o);
 
-            //TextView textResponse = findViewById(R.id.textOutput);
-            //textResponse.setText(responseText);
-            String[] strHoldWorkoutMeal = parsedText.split("-");
+            //Create arrays to parse data
+            String[] strHoldWorkoutDescription = parsedText.split("-");
+            ArrayList<String> strHoldDescription = new ArrayList<String>();
+            ArrayList<String> strHoldWorkout = new ArrayList<String>();
+
+            //Extract descriptions into
+            for (String i: strHoldWorkoutDescription) {
+
+                strHoldWorkout.add(i.split(":")[0]);
+                strHoldDescription.add(i.split(":")[1]);
+
+            }
+
+
 
             TextView textParsed = findViewById(R.id.txtJSONParsed);
             textParsed.setText("");
 
-            SharedPreferences mealPref = getSharedPreferences("mealPref", Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = mealPref.edit();
 
-
-            for (String workoutMealString : strHoldWorkoutMeal) {
+            //Print out workout array
+            for (String workoutMealString : strHoldWorkoutDescription) {
 
                 if(!workoutMealString.isEmpty())
                 {
@@ -217,29 +183,25 @@ public class ChatScreen extends AppCompatActivity implements
 
             }
 
-            DatabaseHelperWorkout dbWrkout = new DatabaseHelperWorkout(getApplicationContext());
+            WorkoutDatabase dbWorkout = new WorkoutDatabase(getApplicationContext());
 
-            for (String workoutMeal : strHoldWorkoutMeal) {
+            //Save each workout to the database
 
-                if(workoutMealFlag)
+
+            if(strHoldWorkout.size() == strHoldDescription.size())
+            {
+
+                for (int i = 0; i < strHoldWorkout.size(); i++)
                 {
 
-                   // WorkoutModelClass wkmClass = new WorkoutModelClass(workoutMeal);
-                  //  dbWrkout.storeData(wkmClass);
-
-
-                }
-                else
-                {
-
-                    editor.putString("meal-" + mealPrefKeyNum, workoutMeal);
-                    mealPrefKeyNum++;
+                  dbWorkout.insertWorkout(strHoldWorkout.get(i), strHoldDescription.get(i));
 
                 }
 
             }
 
-            editor.apply();
+
+
 
 
 
