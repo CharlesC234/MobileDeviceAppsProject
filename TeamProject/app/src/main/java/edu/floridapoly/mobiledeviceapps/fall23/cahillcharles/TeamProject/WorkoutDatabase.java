@@ -53,8 +53,8 @@ public class WorkoutDatabase extends SQLiteOpenHelper {
     public ArrayList<WorkoutModelClass> getAllWorkouts() {
         ArrayList<WorkoutModelClass> workouts = new ArrayList<>();
 
-        //Select Query to get city and temperature values from list
-        String query = "SELECT workout_name, description FROM " + TABLE_NAME;
+        //Select Query to get workout information from list
+        String query = "SELECT id, workout_name, description FROM " + TABLE_NAME;
         String workout_name = "";
         String description = "";
         int id = -1;
@@ -77,4 +77,8 @@ public class WorkoutDatabase extends SQLiteOpenHelper {
         return workouts;
     }
 
+    public void deleteWorkout(int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_NAME + " WHERE ID=" + id);
+    }
 }
