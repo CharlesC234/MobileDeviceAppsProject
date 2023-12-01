@@ -45,6 +45,8 @@ public class ChatScreen extends AppCompatActivity implements
     Boolean workoutMealFlag = false;
     int mealPrefKeyNum = 0;
 
+    String prompt = "";
+
     // Declare button variables
     private BottomNavigationView bottomNavigationView;
 
@@ -84,15 +86,15 @@ public class ChatScreen extends AppCompatActivity implements
 
 
                 workoutMealFlag = true;
-               String prompt = "Provide workouts with descriptions of the workout based off inputs:" +
-                       "Weight: " + weight+
-                       "Height: " + height+
-                       "Gender: " + strGender+
-                       "Calorie Goal: " + calorie+
-                       "Give only names of the workouts and descriptions of the workouts. No user information. " +
-                       "No dates, no amount that needs to be done, no days, no types. " +
-                       "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores." +
-                       "Use example. Don't reformat example."+
+                String workoutPrompt = "Provide workouts with descriptions of the workout based off inputs:" +
+                        "Weight: " + weight+
+                        "Height: " + height+
+                        "Gender: " + strGender+
+                        "Calorie Goal: " + calorie+
+                        "Give only names of the workouts and descriptions of the workouts. No user information. " +
+                        "No dates, no amount that needs to be done, no days, no types. " +
+                        "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores." +
+                        "Use example. Don't reformat example."+
                         "Example: " +
                         "CardioInterval: Alternating between sprinting and jogging to elevate heart rate.-" +
                         "StrengthTraining: Compound exercises like squats, deadlifts, and bench press.-" +
@@ -113,8 +115,8 @@ public class ChatScreen extends AppCompatActivity implements
 
                 //String prompt = "say something";
 
-                new GetServerData().execute(prompt);
-               //textViewOutput.setText(parsedText);
+                new GetServerData().execute(workoutPrompt);
+                //textViewOutput.setText(parsedText);
 
 
             }
@@ -126,10 +128,36 @@ public class ChatScreen extends AppCompatActivity implements
             @Override
             public void onClick(View arg0) {
                 EditText editText = findViewById(R.id.Input);
-                String prompt = editText.getText().toString();
-                Log.i("WebService", "WebService URL: " + prompt);
+                String holdIntitialPrompt = "";
+                holdIntitialPrompt = editText.getText().toString();
+                //String prompt = editText.getText().toString();
+                Log.i("WebService", "WebService URL: " + holdIntitialPrompt);
+
+                workoutMealFlag = false;
+                String strHoldCalorieDecision = "";
+
+                switch (calorieDecision){
+                    case 2131362115:
+                        strHoldCalorieDecision = "gain";
+                        break;
+                    case 2131362116:
+                        strHoldCalorieDecision = "maintain";
+                        break;
+                    default:
+                        strHoldCalorieDecision = "cut";
+                        break;
+
+                }
+
+                String userInputWorkoutPrompt = "pretend you are a personal trainer. I am a " + height + " " + strGender + " who is " + weight + " pounds and looking to " + strHoldCalorieDecision + " weight. " +
+                        holdIntitialPrompt +
+                        "Provide the response in JSON format with the keys being name and description. " +
+                        "provide a generic name for the overall workout as a key. No tips.";
+
+
+
                 // Use AsyncTask execute Method To Prevent ANR Problem
-                new GetServerData().execute(prompt);
+                new GetServerData().execute(userInputWorkoutPrompt);
             }
         });
 
@@ -152,63 +180,94 @@ public class ChatScreen extends AppCompatActivity implements
         protected void onPostExecute(Object o) {
             super.onPostExecute(o);
 
-            //Create arrays to parse data
-            String[] strHoldWorkoutDescription = parsedText.split("-");
-            ArrayList<String> strHoldDescription = new ArrayList<String>();
-            ArrayList<String> strHoldWorkout = new ArrayList<String>();
+            if (workoutMealFlag) {
+                //Create arrays to parse data
+                String[] strHoldWorkoutDescription = parsedText.split("-");
+                ArrayList<String> strHoldDescription = new ArrayList<String>();
+                ArrayList<String> strHoldWorkout = new ArrayList<String>();
 
-            //Extract descriptions into
-            for (String i: strHoldWorkoutDescription) {
+                //Extract descriptions into
+                for (String i : strHoldWorkoutDescription) {
 
-                strHoldWorkout.add(i.split(":")[0]);
-                strHoldDescription.add(i.split(":")[1]);
-
-            }
-
-
-
-            TextView textParsed = findViewById(R.id.txtJSONParsed);
-            textParsed.setText("");
-
-
-            //Print out workout array
-            for (String workoutMealString : strHoldWorkoutDescription) {
-
-                if(!workoutMealString.isEmpty())
-                {
-
-                    textParsed.append(workoutMealString + "\n");
+                    strHoldWorkout.add(i.split(":")[0]);
+                    strHoldDescription.add(i.split(":")[1]);
 
                 }
 
+
+                TextView textParsed = findViewById(R.id.txtJSONParsed);
+                textParsed.setText("");
+
+
+                //Print out workout array
+                for (String workoutMealString : strHoldWorkoutDescription) {
+
+                    if (!workoutMealString.isEmpty()) {
+
+                        textParsed.append(workoutMealString + "\n");
+
+                    }
+
+                }
+
+
+                WorkoutDatabase dbWorkout = new WorkoutDatabase(getApplicationContext());
+
+                //Save each workout to the database
+
+
+                if (strHoldWorkout.size() == strHoldDescription.size()) {
+
+                    for (int i = 0; i < strHoldWorkout.size(); i++) {
+
+                        dbWorkout.insertWorkout(strHoldWorkout.get(i), strHoldDescription.get(i));
+
+                    }
+
+                }
+
+
             }
-
-            WorkoutDatabase dbWorkout = new WorkoutDatabase(getApplicationContext());
-
-            //Save each workout to the database
-
-
-            if(strHoldWorkout.size() == strHoldDescription.size())
+            else
             {
 
-                for (int i = 0; i < strHoldWorkout.size(); i++)
-                {
+                try {
+                    JSONObject jsonResponse = new JSONObject(parsedText);
+                    String workoutStr = jsonResponse.getString("workout");
+                    JSONArray excerciseArray = jsonResponse.getJSONArray("exercises");
+                    String strAllExcercises = "";
 
-                  dbWorkout.insertWorkout(strHoldWorkout.get(i), strHoldDescription.get(i));
+                    for (int i = 0; i < excerciseArray.length(); i++)
+                    {
+                        JSONObject JsonExecerise = excerciseArray.getJSONObject(i);
 
+                        if(i != (excerciseArray.length() - 1))
+                        {
+
+                            strAllExcercises += JsonExecerise.getString("name") + " : " + JsonExecerise.getString("description") + "-";
+
+                        }
+                        else
+                        {
+
+                            strAllExcercises += JsonExecerise.getString("name") + " : " + JsonExecerise.getString("description");
+
+                        }
+                    }
+
+
+                    WorkoutDatabase dbWorkout = new WorkoutDatabase(getApplicationContext());
+                    dbWorkout.insertWorkout(workoutStr, strAllExcercises);
+
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
                 }
 
             }
-
-
-
-
-
-
         }
     }
 
-    protected String getWebServiceResponseData(String prompt) {
+    protected String getWebServiceResponseData(String pPrompt) {
 
         try {
             url = new URL(urlStr);
@@ -220,7 +279,7 @@ public class ChatScreen extends AppCompatActivity implements
             connection.setRequestProperty("Content-Type", "application/json");
 
             // Form the request body
-            String requestBody = "{\"model\": \"" + model + "\", \"messages\": [{\"role\": \"user\", \"content\": \"" + prompt + "\"}]}";
+            String requestBody = "{\"model\": \"" + model + "\", \"messages\": [{\"role\": \"user\", \"content\": \"" + pPrompt + "\"}]}";
             connection.setDoOutput(true);
             OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
             writer.write(requestBody);
