@@ -3,7 +3,9 @@ package edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -116,16 +118,44 @@ public class MainScreen extends AppCompatActivity implements
         scroll = findViewById(R.id.scroller);
         int i = 0;
         TextView view;
-        while(i < workouts.size() || i < 4)
+        if (workouts.size() != 0) {
+            while (i < workouts.size() && i < 4) {
+                WorkoutModelClass workout = workouts.get(i);
+                String desc = workout.getDescription();
+                String workoutName = workout.getName();
+                view = titles.get(i);
+                view.setText(workoutName);
+                view = descriptions.get(i);
+                view.setText(desc);
+                i++;
+            }
+            if (i < 4)
+            {
+                while(i < 4)
+                {
+                    String desc = "No workouts...yet";
+                    String workoutName = "";
+                    view = titles.get(i);
+                    view.setText(workoutName);
+                    view = descriptions.get(i);
+                    view.setText(desc);
+                    i++;
+                }
+            }
+
+        }
+        else
         {
-            WorkoutModelClass workout = workouts.get(i);
-            String desc = workout.getDescription();
-            String workoutName = workout.getName();
-            view = titles.get(i);
-            view.setText(workoutName);
-            view = descriptions.get(i);
-            view.setText(desc);
-            i++;
+            while(i < 4)
+            {
+                String desc = "No workouts...yet";
+                String workoutName = "";
+                view = titles.get(i);
+                view.setText(workoutName);
+                view = descriptions.get(i);
+                view.setText(desc);
+                i++;
+            }
         }
         //putting the nav bar into activity
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
@@ -156,6 +186,37 @@ public class MainScreen extends AppCompatActivity implements
                 }
             }
         });
+    }
+    public void finishedWorkout(View view)
+    {
+        //alert to maker sure the user actually wants to delete this workout
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Finished Workout?");
+        builder.setMessage("Did you finish this Workout?");
+        builder.setCancelable(true);
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            //increase the workout finished function
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                SharedPreferences prefs = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE);
+                int finishedWorkouts = prefs.getInt(getString(R.string.workouts_finished_key),0);
+                finishedWorkouts++;
+                SharedPreferences.Editor editor = prefs.edit();
+                editor.putInt(getString(R.string.workouts_finished_key),finishedWorkouts);
+                editor.apply();
+                finWorkoutsTxt.setText(Integer.toString(finishedWorkouts));
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                //nothing they just didn't delete the workout
+            }
+        });
+        //refresh view
+
+        //display alert dialog
+        builder.create().show();
     }
     public void updateCalorieCounter(int current, int goal)
     {

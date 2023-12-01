@@ -1914,6 +1914,10 @@ id default_activity_button
 id delete_workout_image
 id deltaRelative
 id dependency_ordering
+id des0
+id des1
+id des2
+id des3
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2124,6 +2128,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id scroller
 id search_badge
 id search_bar
 id search_button
@@ -2200,11 +2205,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView10
-id textView11
-id textView12
-id textView13
-id textView14
 id textView15
 id textView16
 id textView18
@@ -2214,9 +2214,6 @@ id textView23
 id textView25
 id textView4
 id textView6
-id textView7
-id textView8
-id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2230,6 +2227,10 @@ id thursday_progressLayout
 id thursday_text
 id time
 id title
+id title0
+id title1
+id title2
+id title3
 id titleDividerNoCustom
 id title_template
 id toggle

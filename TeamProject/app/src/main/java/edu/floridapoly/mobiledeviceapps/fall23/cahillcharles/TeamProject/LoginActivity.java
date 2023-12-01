@@ -54,9 +54,9 @@ public class LoginActivity extends AppCompatActivity implements AdapterView.OnIt
 
         // Retrieve values from shared preferences and set them to the respective TextViews
         uploadNameTextView.setText(sharedPreferences.getString(getString(R.string.name_key), ""));
-        uploadHeightTextView.setText(String.valueOf(sharedPreferences.getString(getString(R.string.height_key), "")));
-        uploadWeightTextView.setText(String.valueOf(sharedPreferences.getString(getString(R.string.weight_key), "")));
-        uploadCalorieTextView.setText(String.valueOf(sharedPreferences.getString(getString(R.string.calorie_key), "")));
+        uploadHeightTextView.setText(String.valueOf(sharedPreferences.getString(Integer.toString(R.string.height_key), "")));
+        uploadWeightTextView.setText(String.valueOf(sharedPreferences.getString(Integer.toString(R.string.weight_key), "")));
+        uploadCalorieTextView.setText(String.valueOf(sharedPreferences.getString(Integer.toString(R.string.calorie_key), "")));
 
         // Create an ArrayAdapter for the spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
