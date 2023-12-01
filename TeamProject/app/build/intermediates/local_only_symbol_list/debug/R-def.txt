@@ -17,6 +17,7 @@ color white
 color your_color
 drawable avatar
 drawable chat_bubble_main
+drawable chat_scree_navigation_image
 drawable circular_profile
 drawable circular_progress_bar
 drawable circular_shape
@@ -24,6 +25,7 @@ drawable counter_bg
 drawable delete_workout_img
 drawable dropdown_arrow
 drawable dropdown_arrow_up
+drawable home_screen_navigation_image
 drawable ic_chat_background
 drawable ic_chat_foreground
 drawable ic_home_background
@@ -33,10 +35,12 @@ drawable ic_launcher_foreground
 drawable ic_profile_background
 drawable ic_profile_foreground
 drawable popup_bg_window
+drawable profile_navigation_image
 drawable rounded_edittext
 drawable rounded_radio
 drawable sign_in_button
 drawable streak_active
+drawable textview
 drawable workout_bg
 font julius_sansone
 id Caloriestxt
@@ -51,7 +55,6 @@ id currentCalAmtInput
 id currentCalText
 id delete_workout_image
 id dropdown_workout_image
-id example1
 id example2
 id finishedWorkoutsTextView
 id friday_progressLayout
@@ -60,6 +63,8 @@ id greetingText
 id home
 id monday_progressLayout
 id monday_text
+id msgr
+id msgview
 id nameText
 id nameTextView
 id nextButton
@@ -82,7 +87,6 @@ id streak_count
 id submitCalorieUpdate
 id sunday_progressLayout
 id sunday_text
-id textOutput
 id textView10
 id textView11
 id textView12
@@ -104,7 +108,6 @@ id thursday_progressLayout
 id thursday_text
 id tuesday_progressLayout
 id tuesday_text
-id txtJSONParsed
 id uploadCalorie
 id uploadGender
 id uploadHeight
@@ -122,6 +125,8 @@ layout activity_main
 layout activity_main_screen
 layout activity_profile_screen
 layout activity_saved_workouts
+layout left
+layout right
 layout update_calorie_dialogbox
 layout workouts_recyclerview
 menu bottom_nav_menu

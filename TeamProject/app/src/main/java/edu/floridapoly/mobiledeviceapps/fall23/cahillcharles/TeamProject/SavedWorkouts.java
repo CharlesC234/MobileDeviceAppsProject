@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
@@ -39,6 +40,9 @@ public class SavedWorkouts extends AppCompatActivity implements NavigationView.O
 
         db = new WorkoutDatabase(this); //start database
         ArrayList<WorkoutModelClass> workouts = db.getAllWorkouts(); //get all workouts from database
+        for(int i = 0; i < workouts.size(); i++) {
+            Log.i("workouts: ", workouts.get(i).getName() + " ---- " + workouts.get(i).getDescription());
+        }
 
         //Finish setting up recycler view and dynamic expandable list
         RecyclerView recyclerView = findViewById(R.id.workouts_recycler_view);

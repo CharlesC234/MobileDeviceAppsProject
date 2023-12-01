@@ -1701,6 +1701,7 @@ int drawable btn_radio_off_to_on_mtrl_animation 0x7f08005e
 int drawable btn_radio_on_mtrl 0x7f08005f
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f080060
 int drawable chat_bubble_main 0x7f080061
+int drawable chat_scree_navigation_image 0x7f0800a6
 int drawable circular_profile 0x7f080062
 int drawable circular_progress_bar 0x7f080063
 int drawable circular_shape 0x7f080064
@@ -1713,6 +1714,7 @@ int drawable design_password_eye 0x7f08006a
 int drawable design_snackbar_background 0x7f08006b
 int drawable dropdown_arrow 0x7f08006c
 int drawable dropdown_arrow_up 0x7f08006d
+int drawable home_screen_navigation_image 0x7f0800a7
 int drawable ic_chat_background 0x7f08006e
 int drawable ic_chat_foreground 0x7f08006f
 int drawable ic_clock_black_24dp 0x7f080070
@@ -1761,6 +1763,7 @@ int drawable notification_template_icon_low_bg 0x7f08009a
 int drawable notification_tile_bg 0x7f08009b
 int drawable notify_panel_notification_icon_bg 0x7f08009c
 int drawable popup_bg_window 0x7f08009d
+int drawable profile_navigation_image 0x7f0800a8
 int drawable rounded_edittext 0x7f08009e
 int drawable rounded_radio 0x7f08009f
 int drawable sign_in_button 0x7f0800a0
@@ -1938,7 +1941,6 @@ int id end 0x7f0a00a4
 int id endToStart 0x7f0a00a5
 int id enterAlways 0x7f0a00a6
 int id enterAlwaysCollapsed 0x7f0a00a7
-int id example1 0x7f0a00a8
 int id example2 0x7f0a00a9
 int id exitUntilCollapsed 0x7f0a00aa
 int id expand_activities_button 0x7f0a00ab
