@@ -6,10 +6,12 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +37,11 @@ import javax.net.ssl.HttpsURLConnection;
 public class ChatScreen extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener{
 
+    private ListView listView;
+    private ChatArrayAdapter chatArrayAdapter;
+    private boolean side = false;
+    private EditText chatText;
+
     String responseText;
     String parsedText = "";
     StringBuffer response;
@@ -55,18 +62,30 @@ public class ChatScreen extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_screen);
 
+        listView = (ListView) findViewById(R.id.msgview);
+        chatArrayAdapter = new ChatArrayAdapter(getApplicationContext(), R.layout.right);
+        listView.setAdapter(chatArrayAdapter);
+
+        chatText = (EditText) findViewById(R.id.Input);
+        chatText.setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    return sendChatMessage();
+                }
+                return false;
+            }
+        });
+
 
         // find navigation bar using Resource ID
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         setupBottomNavigation();
 
         final Button btnGetServerData = (Button) findViewById(R.id.send);
-        EditText editText = findViewById(R.id.Input);
         String initialPrompt = "How are you today?";
-        editText.setText(initialPrompt);
+        chatText.setText(initialPrompt);
 
         Button btnGenerateWorkouts = findViewById(R.id.example2);
-        TextView textViewOutput = findViewById(R.id.textOutput);
 
         SharedPreferences shGenerateWorkoutMeal = getSharedPreferences("MyAppPreferences", MODE_PRIVATE);
         String strName = shGenerateWorkoutMeal.getString("Name", "");
@@ -82,6 +101,7 @@ public class ChatScreen extends AppCompatActivity implements
         btnGenerateWorkouts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                sendWorkout("Generate Workout");
 
 
 
@@ -127,9 +147,8 @@ public class ChatScreen extends AppCompatActivity implements
         btnGetServerData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                EditText editText = findViewById(R.id.Input);
                 String holdIntitialPrompt = "";
-                holdIntitialPrompt = editText.getText().toString();
+                holdIntitialPrompt = chatText.getText().toString();
                 //String prompt = editText.getText().toString();
                 Log.i("WebService", "WebService URL: " + holdIntitialPrompt);
 
@@ -195,16 +214,13 @@ public class ChatScreen extends AppCompatActivity implements
                 }
 
 
-                TextView textParsed = findViewById(R.id.txtJSONParsed);
-                textParsed.setText("");
 
 
                 //Print out workout array
                 for (String workoutMealString : strHoldWorkoutDescription) {
 
                     if (!workoutMealString.isEmpty()) {
-
-                        textParsed.append(workoutMealString + "\n");
+                        sendChatResponse(workoutMealString);
 
                     }
 
@@ -382,5 +398,24 @@ public class ChatScreen extends AppCompatActivity implements
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
+    }
+
+    private boolean sendChatMessage() {
+        chatArrayAdapter.add(new ChatMessage(true, chatText.getText().toString()));
+        chatText.setText("");
+        side = true;
+        return true;
+    }
+    private boolean sendWorkout(String res) {
+        chatArrayAdapter.add(new ChatMessage(true, res));
+        chatText.setText("");
+        side = true;
+        return true;
+    }
+    private boolean sendChatResponse(String res) {
+        chatArrayAdapter.add(new ChatMessage(false, res));
+        chatText.setText("");
+        side = false;
+        return true;
     }
 }

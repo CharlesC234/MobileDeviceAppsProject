@@ -1770,6 +1770,7 @@ drawable rounded_radio
 drawable sign_in_button
 drawable streak_active
 drawable test_custom_background
+drawable textview
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable workout_bg
@@ -2029,6 +2030,8 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
+id msgr
+id msgview
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
@@ -2193,7 +2196,6 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
-id textOutput
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -2244,7 +2246,6 @@ id transition_transform
 id triangle
 id tuesday_progressLayout
 id tuesday_text
-id txtJSONParsed
 id unchecked
 id uniform
 id unlabeled
@@ -2361,6 +2362,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout left
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2410,6 +2412,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout right
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

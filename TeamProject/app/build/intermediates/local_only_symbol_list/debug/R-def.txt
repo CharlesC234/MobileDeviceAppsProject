@@ -40,6 +40,7 @@ drawable rounded_edittext
 drawable rounded_radio
 drawable sign_in_button
 drawable streak_active
+drawable textview
 drawable workout_bg
 font julius_sansone
 id Caloriestxt
@@ -62,6 +63,8 @@ id greetingText
 id home
 id monday_progressLayout
 id monday_text
+id msgr
+id msgview
 id nameText
 id nameTextView
 id nextButton
@@ -84,7 +87,6 @@ id streak_count
 id submitCalorieUpdate
 id sunday_progressLayout
 id sunday_text
-id textOutput
 id textView10
 id textView11
 id textView12
@@ -106,7 +108,6 @@ id thursday_progressLayout
 id thursday_text
 id tuesday_progressLayout
 id tuesday_text
-id txtJSONParsed
 id uploadCalorie
 id uploadGender
 id uploadHeight
@@ -124,6 +125,8 @@ layout activity_main
 layout activity_main_screen
 layout activity_profile_screen
 layout activity_saved_workouts
+layout left
+layout right
 layout update_calorie_dialogbox
 layout workouts_recyclerview
 menu bottom_nav_menu
