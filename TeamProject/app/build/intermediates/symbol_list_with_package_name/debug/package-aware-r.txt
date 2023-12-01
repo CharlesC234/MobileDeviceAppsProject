@@ -1702,6 +1702,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable chat_bubble_main
+drawable chat_scree_navigation_image
 drawable circular_profile
 drawable circular_progress_bar
 drawable circular_shape
@@ -1714,6 +1715,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable dropdown_arrow
 drawable dropdown_arrow_up
+drawable home_screen_navigation_image
 drawable ic_chat_background
 drawable ic_chat_foreground
 drawable ic_clock_black_24dp
@@ -1762,6 +1764,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable popup_bg_window
+drawable profile_navigation_image
 drawable rounded_edittext
 drawable rounded_radio
 drawable sign_in_button
@@ -1939,7 +1942,6 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
-id example1
 id example2
 id exitUntilCollapsed
 id expand_activities_button

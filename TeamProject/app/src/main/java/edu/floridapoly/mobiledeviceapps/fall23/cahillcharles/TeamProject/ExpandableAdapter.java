@@ -55,14 +55,14 @@ public class ExpandableAdapter extends RecyclerView.Adapter<ExpandableAdapter.Vi
                     holder.workoutDescriptionHolder.setVisibility(View.GONE);
                     holder.workoutDescriptionText.setVisibility(View.GONE);
                     //set arrow so that it points up indicating the user click it to make the description disappear
-                    holder.dropDownWorkoutsView.setImageResource(R.drawable.dropdown_arrow_up);
+                    holder.dropDownWorkoutsView.setImageResource(R.drawable.dropdown_arrow);
                 }
                 //if view hasn't been expanded, expand
                 else {
                     holder.workoutDescriptionHolder.setVisibility(View.VISIBLE);
                     holder.workoutDescriptionText.setVisibility(View.VISIBLE);
                     //switch arrow so that it points down indicating to the user that clicking it will display the description
-                    holder.dropDownWorkoutsView.setImageResource(R.drawable.dropdown_arrow);
+                    holder.dropDownWorkoutsView.setImageResource(R.drawable.dropdown_arrow_up);
                 }
             }
         });
@@ -83,6 +83,8 @@ public class ExpandableAdapter extends RecyclerView.Adapter<ExpandableAdapter.Vi
                         db.deleteWorkout(workout.getId());
                         //remove from arraylist
                         workoutList.remove(workout);
+                        //refresh recycler view
+                        notifyDataSetChanged();
                     }
                 });
                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
