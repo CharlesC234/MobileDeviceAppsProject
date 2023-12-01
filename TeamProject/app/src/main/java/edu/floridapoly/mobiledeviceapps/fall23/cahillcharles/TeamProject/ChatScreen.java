@@ -28,7 +28,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -44,8 +43,6 @@ public class ChatScreen extends AppCompatActivity implements
     String urlStr = "https://api.openai.com/v1/chat/completions";
     Boolean workoutMealFlag = false;
     int mealPrefKeyNum = 0;
-
-    String prompt = "";
 
     // Declare button variables
     private BottomNavigationView bottomNavigationView;
@@ -68,13 +65,14 @@ public class ChatScreen extends AppCompatActivity implements
         Button btnGenerateWorkouts = findViewById(R.id.example2);
         TextView textViewOutput = findViewById(R.id.textOutput);
 
-        SharedPreferences shGenerateWorkoutMeal = getSharedPreferences("MyAppPreferences", MODE_PRIVATE);
+        SharedPreferences shGenerateWorkoutMeal = getSharedPreferences("MyAppPreferences", Context.MODE_PRIVATE);
         String strName = shGenerateWorkoutMeal.getString("Name", "");
         int height = shGenerateWorkoutMeal.getInt("Height",0);
         int weight = shGenerateWorkoutMeal.getInt("Weight",0);
         int calorie = shGenerateWorkoutMeal.getInt("Calorie", 0);
         int calorieDecision = shGenerateWorkoutMeal.getInt("radioGroup",0);
         String strGender = shGenerateWorkoutMeal.getString("Gender", "");
+
 
 
 
@@ -86,20 +84,14 @@ public class ChatScreen extends AppCompatActivity implements
 
 
                 workoutMealFlag = true;
-                String workoutPrompt = "Provide workouts with descriptions of the workout based off inputs:" +
-                        "Weight: " + weight+
-                        "Height: " + height+
-                        "Gender: " + strGender+
-                        "Calorie Goal: " + calorie+
-                        "Give only names of the workouts and descriptions of the workouts. No user information. " +
-                        "No dates, no amount that needs to be done, no days, no types. " +
-                        "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores." +
-                        "Use example. Don't reformat example."+
-                        "Example: " +
-                        "CardioInterval: Alternating between sprinting and jogging to elevate heart rate.-" +
-                        "StrengthTraining: Compound exercises like squats, deadlifts, and bench press.-" +
-                        "HIIT: High intensity interval training with bodyweight exercises.-" +
-                        "Yoga: Dynamic yoga flow incorporating strength and flexibility.";
+               String prompt = "Provide workouts based off inputs:" +
+                       "Weight: " + weight +
+                       "Height: " + height +
+                       "Gender: " + strGender +
+                       "Calorie Goal: " + calorie +
+                       "Give only name of the workout and none of the user information. " +
+                       "No dates, no amount that needs to be done, no days, no descriptions, no types. " +
+                       "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores.";
 
                /*
                Provide workouts based off inputs:
@@ -115,49 +107,23 @@ public class ChatScreen extends AppCompatActivity implements
 
                 //String prompt = "say something";
 
-                new GetServerData().execute(workoutPrompt);
-                //textViewOutput.setText(parsedText);
+                new GetServerData().execute(prompt);
+               //textViewOutput.setText(parsedText);
 
 
             }
         });
 
-
+        
 
         btnGetServerData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 EditText editText = findViewById(R.id.Input);
-                String holdIntitialPrompt = "";
-                holdIntitialPrompt = editText.getText().toString();
-                //String prompt = editText.getText().toString();
-                Log.i("WebService", "WebService URL: " + holdIntitialPrompt);
-
-                workoutMealFlag = false;
-                String strHoldCalorieDecision = "";
-
-                switch (calorieDecision){
-                    case 2131362115:
-                        strHoldCalorieDecision = "gain";
-                        break;
-                    case 2131362116:
-                        strHoldCalorieDecision = "maintain";
-                        break;
-                    default:
-                        strHoldCalorieDecision = "cut";
-                        break;
-
-                }
-
-                String userInputWorkoutPrompt = "pretend you are a personal trainer. I am a " + height + " " + strGender + " who is " + weight + " pounds and looking to " + strHoldCalorieDecision + " weight. " +
-                        holdIntitialPrompt +
-                        "Provide the response in JSON format with the keys being name and description. " +
-                        "provide a generic name for the overall workout as a key. No tips.";
-
-
-
+                String prompt = editText.getText().toString();
+                Log.i("WebService", "WebService URL: " + prompt);
                 // Use AsyncTask execute Method To Prevent ANR Problem
-                new GetServerData().execute(userInputWorkoutPrompt);
+                new GetServerData().execute(prompt);
             }
         });
 
@@ -180,94 +146,58 @@ public class ChatScreen extends AppCompatActivity implements
         protected void onPostExecute(Object o) {
             super.onPostExecute(o);
 
-            if (workoutMealFlag) {
-                //Create arrays to parse data
-                String[] strHoldWorkoutDescription = parsedText.split("-");
-                ArrayList<String> strHoldDescription = new ArrayList<String>();
-                ArrayList<String> strHoldWorkout = new ArrayList<String>();
+            //TextView textResponse = findViewById(R.id.textOutput);
+            //textResponse.setText(responseText);
+            String[] strHoldWorkoutMeal = parsedText.split("-");
 
-                //Extract descriptions into
-                for (String i : strHoldWorkoutDescription) {
+            TextView textParsed = findViewById(R.id.txtJSONParsed);
+            textParsed.setText("");
 
-                    strHoldWorkout.add(i.split(":")[0]);
-                    strHoldDescription.add(i.split(":")[1]);
-
-                }
+            SharedPreferences mealPref = getSharedPreferences("mealPref", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = mealPref.edit();
 
 
-                TextView textParsed = findViewById(R.id.txtJSONParsed);
-                textParsed.setText("");
+            for (String workoutMealString : strHoldWorkoutMeal) {
 
+                if(!workoutMealString.isEmpty())
+                {
 
-                //Print out workout array
-                for (String workoutMealString : strHoldWorkoutDescription) {
+                    textParsed.append(workoutMealString + "\n");
 
-                    if (!workoutMealString.isEmpty()) {
-
-                        textParsed.append(workoutMealString + "\n");
-
-                    }
-
-                }
-
-
-                WorkoutDatabase dbWorkout = new WorkoutDatabase(getApplicationContext());
-
-                //Save each workout to the database
-
-
-                if (strHoldWorkout.size() == strHoldDescription.size()) {
-
-                    for (int i = 0; i < strHoldWorkout.size(); i++) {
-
-                        dbWorkout.insertWorkout(strHoldWorkout.get(i), strHoldDescription.get(i));
-
-                    }
-
-                }
-
-
-            }
-            else
-            {
-
-                try {
-                    JSONObject jsonResponse = new JSONObject(parsedText);
-                    String workoutStr = jsonResponse.getString("workout");
-                    JSONArray excerciseArray = jsonResponse.getJSONArray("exercises");
-                    String strAllExcercises = "";
-
-                    for (int i = 0; i < excerciseArray.length(); i++)
-                    {
-                        JSONObject JsonExecerise = excerciseArray.getJSONObject(i);
-
-                        if(i != (excerciseArray.length() - 1))
-                        {
-
-                            strAllExcercises += JsonExecerise.getString("name") + " : " + JsonExecerise.getString("description") + "-";
-
-                        }
-                        else
-                        {
-
-                            strAllExcercises += JsonExecerise.getString("name") + " : " + JsonExecerise.getString("description");
-
-                        }
-                    }
-
-
-                    WorkoutDatabase dbWorkout = new WorkoutDatabase(getApplicationContext());
-                    dbWorkout.insertWorkout(workoutStr, strAllExcercises);
-
-                } catch (JSONException e) {
-                    throw new RuntimeException(e);
                 }
 
             }
+
+            DatabaseHelperWorkout dbWrkout = new DatabaseHelperWorkout(getApplicationContext());
+
+            for (String workoutMeal : strHoldWorkoutMeal) {
+
+                if(workoutMealFlag)
+                {
+
+                    //WorkoutModelClass wkmClass = new WorkoutModelClass(workoutMeal);
+                    //dbWrkout.storeData(wkmClass);
+
+
+                }
+                else
+                {
+
+                    editor.putString("meal-" + mealPrefKeyNum, workoutMeal);
+                    mealPrefKeyNum++;
+
+                }
+
+            }
+
+            editor.apply();
+
+
+
         }
     }
 
-    protected String getWebServiceResponseData(String pPrompt) {
+    protected String getWebServiceResponseData(String prompt) {
 
         try {
             url = new URL(urlStr);
@@ -279,7 +209,7 @@ public class ChatScreen extends AppCompatActivity implements
             connection.setRequestProperty("Content-Type", "application/json");
 
             // Form the request body
-            String requestBody = "{\"model\": \"" + model + "\", \"messages\": [{\"role\": \"user\", \"content\": \"" + pPrompt + "\"}]}";
+            String requestBody = "{\"model\": \"" + model + "\", \"messages\": [{\"role\": \"user\", \"content\": \"" + prompt + "\"}]}";
             connection.setDoOutput(true);
             OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
             writer.write(requestBody);
