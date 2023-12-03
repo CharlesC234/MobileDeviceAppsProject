@@ -6,77 +6,77 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml
+8-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml
+9-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:4:5-67
-11-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:4:22-64
+11-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:4:22-64
 12
 13    <application
-13-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:5:5-36:19
+13-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:5:5-36:19
 14        android:allowBackup="true"
-14-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:6:9-35
+14-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:6:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.5.0] C:\Users\missz\.gradle\caches\transforms-3\b1fe9740f6c86f0b7649a763c3bf2b85\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.5.0] /Users/charlescahill/.gradle/caches/transforms-3/b1fe9740f6c86f0b7649a763c3bf2b85/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:7:9-43
+17-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:7:9-43
 18        android:label="@string/app_name"
-18-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:8:9-41
+18-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:8:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:9:9-54
+19-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:9:9-54
 20        android:supportsRtl="true"
-20-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:10:9-35
+20-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:10:9-35
 21        android:testOnly="true"
 22        android:theme="@style/Theme.AppCompat.NoActionBar" >
-22-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:11:9-59
+22-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:11:9-59
 23        <activity
-23-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:12:9-14:40
+23-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:12:9-14:40
 24            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.ProfileScreen"
-24-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:13:13-42
+24-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:13:13-42
 25            android:exported="false" />
-25-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:14:13-37
+25-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:14:13-37
 26        <activity
-26-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:15:9-17:40
+26-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:15:9-17:40
 27            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.SavedWorkouts"
-27-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:16:13-42
+27-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:16:13-42
 28            android:exported="false" />
-28-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:17:13-37
+28-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:17:13-37
 29        <activity
-29-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:18:9-20:40
+29-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:18:9-20:40
 30            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.ChatScreen"
-30-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:19:13-39
+30-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:19:13-39
 31            android:exported="false" />
-31-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:20:13-37
+31-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:20:13-37
 32        <activity
-32-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:21:9-23:40
+32-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:21:9-23:40
 33            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.MainScreen"
-33-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:22:13-39
+33-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:22:13-39
 34            android:exported="false" />
-34-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:23:13-37
+34-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:23:13-37
 35        <activity
-35-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:24:9-26:40
+35-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:24:9-26:40
 36            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.MainActivity"
-36-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:25:13-41
+36-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:25:13-41
 37            android:exported="false" />
-37-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:26:13-37
+37-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:26:13-37
 38        <activity
-38-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:27:9-35:20
+38-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:27:9-35:20
 39            android:name="edu.floridapoly.mobiledeviceapps.fall23.cahillcharles.TeamProject.LoginActivity"
-39-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:28:13-42
+39-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:28:13-42
 40            android:exported="true" >
-40-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:29:13-36
+40-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:29:13-36
 41            <intent-filter>
-41-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:30:13-34:29
+41-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:30:13-34:29
 42                <action android:name="android.intent.action.MAIN" />
-42-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:31:17-69
-42-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:31:25-66
+42-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:31:17-69
+42-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:31:25-66
 43
 44                <category android:name="android.intent.category.LAUNCHER" />
-44-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:33:17-77
-44-->C:\Users\missz\AndroidStudioProjects\MobileDeviceAppsProject\TeamProject\app\src\main\AndroidManifest.xml:33:27-74
+44-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:33:17-77
+44-->/Users/charlescahill/AndroidStudioProjects/MobileDeviceAppsProject(COPY)/TeamProject/app/src/main/AndroidManifest.xml:33:27-74
 45            </intent-filter>
 46        </activity>
 47    </application>

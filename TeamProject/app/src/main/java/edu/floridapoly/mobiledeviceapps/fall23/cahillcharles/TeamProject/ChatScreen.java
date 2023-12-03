@@ -169,14 +169,13 @@ public class ChatScreen extends AppCompatActivity implements
                 }
 
                 String userInputWorkoutPrompt = "pretend you are a personal trainer. I am a " + height + " " + strGender + " who is " + weight + " pounds and looking to " + strHoldCalorieDecision + " weight. " +
-                        holdIntitialPrompt +
-                        "Provide the response in JSON format with the keys being name and description. " +
-                        "provide a generic name for the overall workout as a key. No tips.";
+                        holdIntitialPrompt;
 
 
 
                 // Use AsyncTask execute Method To Prevent ANR Problem
                 new GetServerData().execute(userInputWorkoutPrompt);
+                sendChatMessage();
             }
         });
 
@@ -247,37 +246,24 @@ public class ChatScreen extends AppCompatActivity implements
             else
             {
 
-                try {
-                    JSONObject jsonResponse = new JSONObject(parsedText);
-                    String workoutStr = jsonResponse.getString("workout");
-                    JSONArray excerciseArray = jsonResponse.getJSONArray("exercises");
-                    String strAllExcercises = "";
+                //TextView textResponse = findViewById(R.id.textOutput);
+                //textResponse.setText(responseText);
+                String[] strHoldWorkoutMeal = parsedText.split("-");
 
-                    for (int i = 0; i < excerciseArray.length(); i++)
-                    {
-                        JSONObject JsonExecerise = excerciseArray.getJSONObject(i);
+                SharedPreferences mealPref = getSharedPreferences("mealPref", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = mealPref.edit();
 
-                        if(i != (excerciseArray.length() - 1))
-                        {
 
-                            strAllExcercises += JsonExecerise.getString("name") + " : " + JsonExecerise.getString("description") + "-";
+                for (String workoutMealString : strHoldWorkoutMeal) {
 
-                        }
-                        else
-                        {
+                    if (!workoutMealString.isEmpty()) {
+                        sendChatResponse(workoutMealString);
 
-                            strAllExcercises += JsonExecerise.getString("name") + " : " + JsonExecerise.getString("description");
-
-                        }
                     }
 
-
-                    WorkoutDatabase dbWorkout = new WorkoutDatabase(getApplicationContext());
-                    dbWorkout.insertWorkout(workoutStr, strAllExcercises);
-
-                } catch (JSONException e) {
-                    throw new RuntimeException(e);
                 }
+
+                editor.apply();
 
             }
         }
