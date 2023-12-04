@@ -102,24 +102,47 @@ public class ChatScreen extends AppCompatActivity implements
             @Override
             public void onClick(View view) {
                 sendWorkout("Generate Workout");
+                String strHoldCalorieDecision = "";
 
+                switch (calorieDecision){
+                    case 2131362115:
+                        strHoldCalorieDecision = "gain";
+                        break;
+                    case 2131362116:
+                        strHoldCalorieDecision = "maintain";
+                        break;
+                    default:
+                        strHoldCalorieDecision = "cut";
+                        break;
 
+                }
+
+                //lengthy prompt that basically just gets the ai to respond in a way that is similar each time
+                String workoutPrompt = "pretend you are ae personal trainer. I am " + height + " centimeters tall " + strGender + " and weigh " + weight + " pounds";
+                workoutPrompt += "I have a caloric intake goal of " + calorie + " and am looking to " + strHoldCalorieDecision + " weight.";
+                workoutPrompt += "generate me a string of workouts. Provide each workout with a unique name and a description of the workout." +
+                                 "each workout should be formatted as [WorkoutName]:[WorkoutDescription]"+
+                                 "delimit each name from the each description with a colon and each unique workout with a new line. " +
+                                 "do NOT include colons within the description. only use a colon to delimit workout names from their descriptions. " +
+                                 "there should be NO numbered lists. only separate workouts defined by their workout name and the description. workouts must be separated by new lines characters, workout names and descriptions separated by colons. " +
+                                 "do NOT include dates, bullet points, underscores, or quotes. only names and descriptions. you do not need to provide an overall name for the workout plan. just individual workouts."+
+                                 "please only provide no more than 5 workouts.";
 
                 workoutMealFlag = true;
-                String workoutPrompt = "Provide workouts with descriptions of the workout based off inputs:" +
+                /*String workoutPrompt = "Provide workouts with descriptions of the workout based off inputs:" +
                         "Weight: " + weight+
                         "Height: " + height+
                         "Gender: " + strGender+
                         "Calorie Goal: " + calorie+
-                        "Give only names of the workouts and descriptions of the workouts. No user information. " +
-                        "No dates, no amount that needs to be done, no days, no types. " +
-                        "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores." +
-                        "Use example. Don't reformat example."+
+                        "Give only names of the workouts and descriptions of the workouts, and sets/reps that need to be done, if applicable. No user information. " +
+                        "No dates, no days, no types. " +
+                        "Put it in one line with hyphens as delimiters with no numbers, no spaces, no bullet points, no quotes, no underscores."+
+                        "Use this for an example response. Don't reformat example. Don't include the example word for word in the response."+
                         "Example: " +
                         "CardioInterval: Alternating between sprinting and jogging to elevate heart rate.-" +
                         "StrengthTraining: Compound exercises like squats, deadlifts, and bench press.-" +
                         "HIIT: High intensity interval training with bodyweight exercises.-" +
-                        "Yoga: Dynamic yoga flow incorporating strength and flexibility.";
+                        "Yoga: Dynamic yoga flow incorporating strength and flexibility.";*/
 
                /*
                Provide workouts based off inputs:
@@ -168,7 +191,7 @@ public class ChatScreen extends AppCompatActivity implements
 
                 }
 
-                String userInputWorkoutPrompt = "pretend you are a personal trainer. I am a " + height + " " + strGender + " who is " + weight + " pounds and looking to " + strHoldCalorieDecision + " weight. " +
+                String userInputWorkoutPrompt = "pretend you are a personal trainer. I am a " + height + "cm tall " + strGender + " who is " + weight + " pounds and looking to " + strHoldCalorieDecision + " weight. " +
                         holdIntitialPrompt;
 
 
@@ -200,17 +223,26 @@ public class ChatScreen extends AppCompatActivity implements
 
             if (workoutMealFlag) {
                 //Create arrays to parse data
-                String[] strHoldWorkoutDescription = parsedText.split("-");
+                //ai responds with two new line characters in between workouts
+                String[] strHoldWorkoutDescription = parsedText.split("\n\n");
                 ArrayList<String> strHoldDescription = new ArrayList<String>();
                 ArrayList<String> strHoldWorkout = new ArrayList<String>();
 
                 //Extract descriptions into
                 for (String i : strHoldWorkoutDescription) {
+                    //split workout into name and description
+                    String[] parts = i.split(":", 2);
 
-                    strHoldWorkout.add(i.split(":")[0]);
-                    strHoldDescription.add(i.split(":")[1]);
-
+                    if (parts.length == 2) {
+                        //specific formatting with response, just gets name and description
+                        strHoldWorkout.add(parts[0]);
+                        strHoldDescription.add(parts[1]);
+                    } else {
+                        //error in input.
+                        //do nothing with input
+                    }
                 }
+
 
 
 
@@ -248,7 +280,7 @@ public class ChatScreen extends AppCompatActivity implements
 
                 //TextView textResponse = findViewById(R.id.textOutput);
                 //textResponse.setText(responseText);
-                String[] strHoldWorkoutMeal = parsedText.split("-");
+                String[] strHoldWorkoutMeal = parsedText.split("/");
 
                 SharedPreferences mealPref = getSharedPreferences("mealPref", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = mealPref.edit();
@@ -349,6 +381,7 @@ public class ChatScreen extends AppCompatActivity implements
             e.printStackTrace();
         }
 
+        Log.i("JSON Content", contentStr);
         return contentStr;
     }
 
