@@ -46,7 +46,7 @@ public class ChatScreen extends AppCompatActivity implements
     String parsedText = "";
     StringBuffer response;
     URL url;
-    String apiKey = "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";
+    String apiKey = "INSERT OPEN AI API KEY";
     String model = "gpt-3.5-turbo";
     String urlStr = "https://api.openai.com/v1/chat/completions";
     Boolean workoutMealFlag = false;
